@@ -1,4 +1,3 @@
-/* General Resets and Base Styles */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -7,7 +6,7 @@
 
 body {
   font-family: "Inter", sans-serif;
-  background-color: #0d001e; /* Darker, deep purple-black background */
+  background-color: #0d001e; 
   color: #e6eef7;
   min-height: 100vh;
   padding: 40px 20px;
@@ -19,50 +18,50 @@ body {
 
 .container {
   width: 100%;
-  max-width: 1200px; /* Slightly wider container for more content space */
+  max-width: 1200px; 
 }
 
 /* Header Section */
 header {
   text-align: center;
-  margin-bottom: 60px; /* More spacing */
+  margin-bottom: 60px; 
   animation: fadeDown 1s ease-out;
 }
 
 header h1 {
-  font-size: 48px; /* Larger heading */
+  font-size: 48px;
   font-weight: 700;
   color: #ffffff;
   margin-bottom: 10px;
-  text-shadow: 0 0 15px rgba(160, 32, 240, 0.6); /* Pronounced glow */
+  text-shadow: 0 0 15px rgba(160, 32, 240, 0.6); 
 }
 
 header p {
-  color: #c7d2e0; /* Slightly muted white for body text */
-  font-size: 18px; /* Larger paragraph */
+  color: #c7d2e0; 
+  font-size: 18px; 
   line-height: 1.6;
   max-width: 800px;
   margin: 0 auto;
 }
 
 .highlight {
-  color: #a020f0; /* Consistent purple */
+  color: #a020f0; 
   font-weight: 700;
 }
 
-/* General Section Styling (Mission Section) */
+/* Mission Section */
 .about-section {
-  background: rgba(255, 255, 255, 0.03); /* Lighter card background */
+  background: rgba(255, 255, 255, 0.03); 
   border-radius: 16px;
-  padding: 40px; /* More padding */
+  padding: 40px; 
   margin-bottom: 50px;
-  border: 1px solid rgba(160, 32, 240, 0.2); /* Purple border */
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5), 0 0 30px rgba(160, 32, 240, 0.1); /* Deeper shadow with subtle purple glow */
+  border: 1px solid rgba(160, 32, 240, 0.2); 
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5), 0 0 30px rgba(160, 32, 240, 0.1); 
   animation: fadeUp 1s ease-out;
 }
 
 .about-section h2 {
-  font-size: 32px; /* Larger sub-heading */
+  font-size: 32px; 
   margin-bottom: 20px;
   color: #a020f0;
   text-align: center;
@@ -96,40 +95,40 @@ header p {
 
 .slider-track {
   display: flex;
-  width: 200%; /* For two slides */
-  animation: swipe 20s infinite ease-in-out; /* Keeps sliding */
+  width: 200%;
+  animation: swipe 20s infinite ease-in-out; 
 }
 
 .instructor-card {
   display: flex;
-  flex-direction: row; /* Default for larger screens */
+  flex-direction: row; 
   align-items: center;
-  background: #1a013a; /* Darker, rich purple-black for cards */
+  background: #1a013a; 
   padding: 30px;
   border-radius: 20px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7), 0 0 40px rgba(160, 32, 240, 0.3); /* Enhanced shadow and glow */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7), 0 0 40px rgba(160, 32, 240, 0.3); 
   border: 1px solid rgba(160, 32, 240, 0.3);
-  width: 50%; /* Each card takes half the track width */
+  width: 50%; 
   flex-shrink: 0;
   box-sizing: border-box;
-  margin: 0 15px; /* Space between cards, adjusted for slider */
+  margin: 0 15px; 
 }
 
 .instructor-image-wrapper {
   position: relative;
-  width: 180px; /* Larger image size */
+  width: 180px; 
   height: 180px;
-  min-width: 180px; /* Prevent shrinking */
-  border-radius: 50%; /* Circular image */
+  min-width: 180px; 
+  border-radius: 50%; 
   overflow: hidden;
   background: linear-gradient(
     45deg,
     #a020f0,
     #ff00ff
-  ); /* Gradient border effect */
-  padding: 5px; /* This creates the visible border */
+  ); 
+  padding: 5px; 
   box-shadow: 0 0 30px rgba(160, 32, 240, 0.8), inset 0 0 10px rgba(255, 255, 255, 0.2); /* Intense glow */
-  margin-right: 40px; /* Space from content */
+  margin-right: 40px; 
 }
 
 .instructor-image {
@@ -146,11 +145,11 @@ header p {
 }
 
 .instructor-name {
-  font-size: 32px; /* Prominent name */
+  font-size: 32px; 
   font-weight: 700;
   margin-bottom: 8px;
   color: #ffffff;
-  text-shadow: 0 0 8px #a020f0; /* Name glow */
+  text-shadow: 0 0 8px #a020f0; 
 }
 
 .instructor-tags {
@@ -161,7 +160,7 @@ header p {
 }
 
 .tag {
-  background-color: rgba(160, 32, 240, 0.2); /* Semi-transparent purple tag */
+  background-color: rgba(160, 32, 240, 0.2); 
   color: #e6eef7;
   padding: 6px 12px;
   border-radius: 8px;
@@ -185,8 +184,8 @@ header p {
 }
 
 .chip {
-  background-color: #3b006d; /* Darker purple chip */
-  color: #ff99ff; /* Brighter purple text */
+  background-color: #3b006d; 
+  color: #ff99ff; 
   padding: 5px 10px;
   border-radius: 20px;
   font-size: 13px;
@@ -277,10 +276,10 @@ header p {
 /* Skills Section */
 .skills-section {
   display: flex;
-  flex-direction: row; /* Default for larger screens */
+  flex-direction: row; 
   align-items: center;
   justify-content: space-between;
-  background: #1a013a; /* Same background as instructor cards for consistency */
+  background: #1a013a; 
   border-radius: 20px;
   padding: 50px;
   margin-top: 60px;
@@ -330,9 +329,9 @@ header p {
 }
 
 .skill-item i {
-  color: #a020f0; /* Purple check icon */
+  color: #a020f0; 
   font-size: 20px;
-  margin-top: 2px; /* Align icon better */
+  margin-top: 2px; 
   flex-shrink: 0;
 }
 
@@ -363,7 +362,7 @@ header p {
   width: 400px;
   border-radius: 15px;
   box-shadow: 0 0 50px rgba(160, 32, 240, 0.5), 0 0 80px rgba(0, 0, 0, 0.8);
-  /* Added a placeholder image style, you'd replace this with your actual tech logos SVG/image */
+  
 }
 
 /* Footer */
@@ -407,14 +406,14 @@ footer {
   }
   50%,
   95% {
-    transform: translateX(calc(-50% - 30px)); /* Adjust for margin between cards */
+    transform: translateX(calc(-50% - 30px)); 
   }
   100% {
     transform: translateX(0);
   }
 }
 
-/* Responsive Adjustments */
+/* Responsive  */
 @media (max-width: 1024px) {
   header h1 {
     font-size: 40px;
@@ -447,7 +446,7 @@ footer {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin: 0 5px; /* Smaller margin on smaller screens */
+    margin: 0 5px; 
   }
   .instructor-image-wrapper {
     margin-right: 0;
@@ -472,10 +471,10 @@ footer {
     text-align: center;
   }
   .skills-list {
-    align-items: center; /* Center list items when stacked */
+    align-items: center; 
   }
   .skill-item {
-    text-align: left; /* Keep text aligned within item */
+    text-align: left; 
   }
   .skills-image {
     padding: 0;

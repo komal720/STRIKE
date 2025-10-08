@@ -2,157 +2,134 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
 }
 
 body {
-  max-width: 1280px;
+  background-color: #0b0713;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+}
+
+h1,
+h2 {
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+h1 span,
+h2 span {
+  color: #9c6bff;
+}
+
+p {
+  text-align: center;
+  color: #aaa;
+  margin-bottom: 2rem;
+}
+
+.header {
+  padding: 3rem 1rem 0rem 1rem;
+}
+
+.courses-section {
+  padding: 2rem 1rem 0rem 1rem;
+  max-width: 1200px;
   margin: 0 auto;
-  background-color: #0a0c10;
-  color: #fff;
-  padding: 0px 2rem;
-}
-/* Container */
-span{
-    color: purple;
 }
 
-h2{
-    text-align: center;
-  font-size: 3.5rem;
-  font-weight: 700;
-  line-height: 1.2;
-  margin-bottom: 1.2rem;
-  margin-top: 1rem;
-}
-
-p {
-    
-    text-align: center; 
-  font-size: 3rem;
-  margin-bottom: 1rem;
-  opacity: 0.8;
-}
-
-
-
-h3 {
-  color: #fff;
-  font-size: 18px;
-  font-weight: 600;
-  margin-bottom: 10px;
-}
-ul {
-  list-style: none;
-}
- ul li {
-  margin-bottom: 10px;
-}
-
-ul li a {
-  color: #c5c5c5;
-  text-decoration: none;
-  display: inline-block;
-  transition: color 0.3s ease, transform 0.3s ease;
-}
-
-ul li a:hover {
-  color: #a855f7;
-  transform: translateX(10px);
-}
-
-p {
-  color: #c5c5c5;
-  line-height: 1.7;
-  font-size: 15px;
-}
- 
-.cards-container {
+.card-container {
   display: flex;
-  justify-content: center;
+  /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
+  justify-content: space-between;
   flex-wrap: wrap;
-  gap: 2rem;
-  margin-top: 2rem;
+  /* margin-bottom: 2rem; */
 }
 
-.flip-card {
-  width: 330px;
-  height: 450px;
-  position: relative;
-  cursor: pointer;
+.card {
+  width: 100%;
+  max-width: 300px;
+  height: 430px;
+  margin-bottom: 4rem;
 }
 
-.flip-checkbox {
-  display: none;
-}
-
-.flip-card-inner {
+.card-inner {
   position: relative;
   width: 100%;
   height: 100%;
-  transition: transform 0.8s;
+  transition: transform 0.7s;
   transform-style: preserve-3d;
 }
 
-.flip-checkbox:checked + .flip-card-inner {
+.card:hover .card-inner {
   transform: rotateY(180deg);
 }
 
-.flip-card-front,
-.flip-card-back {
+.card-front,
+.card-back {
   position: absolute;
   width: 100%;
   height: 100%;
-  border-radius: 12px;
   backface-visibility: hidden;
-  color: #fff;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+  border-radius: 12px;
+  background: linear-gradient(135deg, #2b2550, #1c1a25);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-/* Front */
-.flip-card-front {
-  background: #1e1b2f;
-  text-align: left;
-  padding: 15px 15px;
+.card-front.premium {
+  background: linear-gradient(135deg, #2b2550, #1c1a25);
+}
+
+.card-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  padding: 0.75rem;
+}
+
+.card-info {
+  padding: 0.8rem 1rem;
+}
+
+.card-info p {
+  color: #c5c5c5;
+  line-height: 1.3;
   font-size: 15px;
 }
 
-.flip-card-front p {
-  font-size: 15px;
-  margin-bottom: 10px;
-  color: gray;
-  padding-top: 10px;
-}
-
-.flip-card-front span {
-  color: white;
-}
-
-.flip-card-front img {
- width:100%;
-  border-radius: 20px;
+.card-info h3 {
+  font-size: 1rem;
+  font-weight: 600;
   margin-bottom: 10px;
 }
 
-/* Back */
-.flip-card-back {
-  background: #1e1b2f;
+.card-info span {
+  font-size: 0.85rem;
+  color: #ccc;
+}
+
+.card-back {
   transform: rotateY(180deg);
-  text-align: left;
-  padding: 30px;
+  background: linear-gradient(135deg, #2b2550, #1c1a25);
+  text-align: center;
+  padding: 1rem;
+  justify-content: center;
 }
 
-.flip-card-back p {
+.card-back p {
   font-size: 15px;
   margin-bottom: 20px;
 }
 
-.flip-card-back ul li {
+.card-back ul li {
   list-style: none;
   font-size: 15px;
 }
 
-.flip-card-back button {
+.card-back button {
   margin-top: 15px;
   padding: 8px 15px;
   border: none;
@@ -162,68 +139,24 @@ p {
   cursor: pointer;
   font-weight: 500;
 }
-.flip-card-back button:hover {
-  box-shadow: 0 0 15px #c084fc, 0 0 25px #7c3aed;
+.card-back button:hover {
+  box-shadow: 0 0 5px #c084fc, 0 0 25px #7c3aed;
 }
 
-.features-section2 {
-  text-align: center;
-  margin-top: 5rem;
-}
-
-.features-section2 h1 {
-  font-size: 50px;
-  font-weight: 900;
-}
-
-.features-section2 p {
-  font-size: 24px;
-  margin-bottom: 20px;
-  color: gray;
-  padding-top: 10px;
-}
-
-/* === FREE COURSES SECTION STYLING === */
-
-/* Green color to distinguish Free Courses heading */
-.free-span {
-  color: #10b981; /* Tailwind Emerald Green */
-}
-
-/* Add spacing between Premium and Free sections */
-.cards-container + .features-section2 {
-  margin-top: 5rem;
-}
-
-/* Optional: Add media query for smaller screens (mobile-friendly) */
-@media screen and (max-width: 768px) {
-  h2, .features-section2 h1 {
-    font-size: 2.5rem;
-  }
-
-  .features-section2 p,
-  p {
-    font-size: 1.2rem;
-    line-height: 1.6;
-  }
-
-  .flip-card {
-    width: 90%;
-    height: auto;
-  }
-
-  .flip-card-front,
-  .flip-card-back {
-    padding: 20px;
-  }
-
-  .flip-card-back button {
+@media (max-width: 700px) {
+  .card {
     width: 100%;
+    max-width: 300px;
+    height: 430px;
+    margin-bottom: 4rem;
+  }
+  .courses-section {
+    padding: 2rem 10rem ;
   }
 }
 
-
-
-
-
-
+@media (max-width: 480px) {
+  .courses-section {
+    padding: 2rem 2rem ;
+  }
+}
