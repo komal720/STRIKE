@@ -10,25 +10,25 @@ body {
   margin: 0 auto;
   background-color: #0a0c10;
   color: #fff;
+  padding: 0px 2rem;
 }
 
-/* header */
-
-header {
+.header-des {
+  width: 100%;
+  max-width: 1280px;
+  /* margin: 0 auto; */
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: fixed;
-  top: 0;
-  background-color: #0a0c10;
-  width: 100%;
-  max-width: 1280px;
+  top: 0px;
   z-index: 100;
+  background-color: #0a0c10;
+  padding: 1rem;
 }
 
 img {
   width: 10rem;
-  padding-top: 1rem;
 }
 
 nav a {
@@ -49,13 +49,14 @@ nav a {
 
 /* Responsive */
 
-@media (max-width: 480px) {
+@media (max-width: 900px) {
   .main_box {
     position: absolute;
     top: 0px;
     right: 10px;
     background-color: #0a0c10;
     color: #fff;
+    z-index: 101;
   }
   .btn_one i {
     color: white;
@@ -187,21 +188,13 @@ nav a {
   }
 }
 
-@media (min-width: 481px) {
+@media (min-width: 900px) {
   .main_box {
     display: none;
   }
 }
 
-@media (min-width: 1024px) {
-  .header {
-    display: none;
-  }
-}
-
-/* ==============================
-   💌 GET IN TOUCH SECTION
-============================== */
+/* Get In Touch Section */
 
 .Get-in-touch {
   display: flex;
@@ -485,9 +478,7 @@ nav a {
   }
 }
 
-/* ==============================
-   💌 MEDIA QUERIES
-============================== */
+/* Responsive */
 
 @media (max-width: 1024px) {
   .contact-form-section {
@@ -545,13 +536,6 @@ nav a {
     display: none;
   }
 
-  /* .response-status {
-    position: relative;
-    top: 160px;
-    left: 200px;
-    transform: translateX(-50%);
-    animation: moveUpDown-res 2s ease-in-out infinite alternate;
-  } */
 }
 
 @media (max-width: 480px) {
@@ -586,9 +570,7 @@ nav a {
   }
 }
 
-/* ==============================
-   ⚡ FOOTER SECTION
-============================== */
+/* Footer */
 
 .footer {
   background-color: #0a0c10;
@@ -716,6 +698,7 @@ nav a {
 }
 
 /* Footer Animations */
+
 @keyframes fadeUp {
   from {
     opacity: 0;

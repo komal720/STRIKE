@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>STRIKE</title>
     <link rel="stylesheet" href="./style.css" />
-    <link rel="icon" href="./images/logo.png" />   
+    <link rel="icon" href="./images/logo.png" />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
       rel="stylesheet"
@@ -18,19 +18,22 @@
   <body>
     <div>
       <!-- header -->
+
       <header>
         <!-- logo -->
-        <div>
-          <img src="./images/logo.png" alt="STRIKE-logo" />
-        </div>
-        <div class="nav">
-          <nav>
-            <a href="./index.html">Home</a>
-            <a href="#">Tutorials</a>
-            <a href="/About-Us/about.html">About Us</a>
-            <a href="/Contact-Us/contact-us.html">Contact Us</a>
-            <a href="login.html" id="login-btn">Login</a>
-          </nav>
+        <div class="header-des">
+          <div>
+            <img src="./images/strike_logo.png" alt="STRIKE-logo" />
+          </div>
+          <div class="nav">
+            <nav>
+              <a href="./index.html">Home</a>
+              <a href="#">Tutorials</a>
+              <a href="/About-Us/about.html">About Us</a>
+              <a href="/Contact-Us/contact-us.html">Contact Us</a>
+              <a href="/Login/login.html" id="login-btn">Login</a>
+            </nav>
+          </div>
         </div>
 
         <!-- mobile -->
@@ -56,19 +59,19 @@
             <div class="menu">
               <ul>
                 <li>
-                  <a href="index.html">Home</a>
+                  <a href="./index.html">Home</a>
                 </li>
                 <li>
                   <a href="#">Tutorials</a>
                 </li>
                 <li>
-                  <a href="/About-Us/about.html">About Us</a>
+                  <a href="./About-Us/about.html">About Us</a>
                 </li>
                 <li>
-                  <a href="/Contact-Us/contact-us.html">Contact Us</a>
+                  <a href="./Contact-Us/contact-us.html">Contact Us</a>
                 </li>
                 <li>
-                  <a href="login.html" id="login-btn">Login</a>
+                  <a href="./Login/login.html" id="login-btn">Login</a>
                 </li>
               </ul>
             </div>
@@ -101,11 +104,104 @@
               </div>
             </div>
             <div class="img-container">
-              <img src="/images/Rohit-sir.png" alt="Rohit-sir-img" />
+              <img src="/images/rohit_negi.png" alt="Rohit-sir-img" />
               <div class="orbit"></div>
               <div class="orbit orbit2"></div>
             </div>
           </div>
+        </section>
+
+        <section class="features-section1">
+          <h1>Level Up with <span>Strike Courses</span></h1>
+          <p class="feature-para">
+            Strike’s courses focus on the skills companies actually look for.
+            Get hands-on experience, work on real projects, and stand out in
+            today’s competitive market.
+          </p>
+
+          <div class="cards-container">
+            <!-- DSA Card -->
+            <label class="flip-card">
+              <input type="checkbox" class="flip-checkbox" />
+              <div class="flip-card-inner">
+                <!-- Front -->
+                <div class="flip-card-front">
+                  <img src="/images/dsaPaid.png" alt="DSA Course" />
+                  <h3>Data Structures & Algorithms</h3>
+                  <p>
+                    Crack coding interviews and learn efficient problem-solving
+                    through structured DSA lessons.
+                  </p>
+                  <span class="level">BEGINNER → ADVANCED</span><br />
+                  <span class="lectures">200+ Practice Problems</span>
+                </div>
+
+                <!-- Back -->
+                <div class="flip-card-back">
+                  <h3>Why This Course?</h3>
+                  <p>
+                    Designed for coding interviews and real-world
+                    problem-solving — learn how to think like a developer and
+                    crack top tech roles.
+                  </p>
+                  <ul>
+                    <li>📘 Step-by-step DSA Roadmap</li>
+                    <li>💡 500+ Curated Coding Problems</li>
+                    <li>🌳 Deep Dive: Arrays, Trees, Graphs & DP</li>
+                    <li>🎯 Mock Interviews & Resume Tips</li>
+                    <li>🚀 Placement Support & Career Guidance</li>
+                  </ul>
+                  <button>Start Learning →</button>
+                </div>
+              </div>
+            </label>
+
+            <!-- GenAI Card -->
+            <label class="flip-card">
+              <input type="checkbox" class="flip-checkbox" />
+              <div class="flip-card-inner">
+                <!-- Front -->
+                <div class="flip-card-front">
+                  <img src="/images/genai.png" alt="Generative AI Course" />
+                  <h3>Generative AI Mastery</h3>
+                  <p>
+                    Learn how to build and deploy AI applications powered by
+                    ChatGPT, Llama, and Stable Diffusion.
+                  </p>
+                  <span class="level">BEGINNER → ADVANCED</span><br />
+                  <span class="lectures">180+ Interactive Lessons</span>
+                </div>
+
+                <!-- Back -->
+                <div class="flip-card-back">
+                  <h3>What You'll Learn</h3>
+                  <p>
+                    Understand the core ideas, architectures, and real-world
+                    power of Generative AI — from language models to creative
+                    applications.
+                  </p>
+                  <ul>
+                    <li>🧠 Fundamentals of Generative AI</li>
+                    <li>🏗️ LLM Architecture (GPT, Llama)</li>
+                    <li>🎨 AI Art & Image Generation</li>
+                    <li>🚀 Real-world GenAI Projects</li>
+                  </ul>
+                  <button>Start Learning →</button>
+                </div>
+              </div>
+            </label>
+          </div>
+        </section>
+
+        <section class="features-section2">
+          <h1>Ready to Build Your Future?</h1>
+          <p class="feature-para">
+            Level up your skills in AI, coding, and more — designed by industry
+            experts.
+          </p>
+          <a href="./courses/courses.html" class="cta-button"
+            >Explore Courses <i class="fa-solid fa-arrow-right sys"></i>
+          </a>
         </section>
       </main>
 
@@ -137,8 +233,8 @@
           <div class="footer-col">
             <h3>Quick Links</h3>
             <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="/About-Us/about.html">About Us</a><li>
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="/About-Us/about.html">About Us</a></li>
               <li><a href="#">Tutorials</a></li>
               <li><a href="/Contact-Us/contact-us.html">Contact Us</a></li>
             </ul>
@@ -147,7 +243,9 @@
           <div class="footer-col">
             <h3>Company</h3>
             <ul>
-              <li><a href="terms.html">Terms & Conditions</a></li>
+              <li>
+                <a href="/Terms&Condition/terms.html">Terms & Conditions</a>
+              </li>
               <li><a href="#">Privacy Policy</a></li>
             </ul>
           </div>

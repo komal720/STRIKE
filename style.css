@@ -10,17 +10,26 @@ body {
   margin: 0 auto;
   background-color: #0a0c10;
   color: #fff;
+  padding: 0px 2rem;
 }
 
-header {
+
+.header-des {
+  width: 100%;
+  max-width: 1280px;
+  /* margin: 0 auto; */
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 1rem;
+  position: fixed;
+  top: 0px;
+  z-index: 100;
+  background-color: #0a0c10;
+  padding: 1rem;
 }
 
 img {
-  width: 10rem;
+  width: 15rem;
 }
 
 nav a {
@@ -41,13 +50,14 @@ nav a {
 
 /* Responsive */
 
-@media (max-width: 480px) {
+@media (max-width: 900px) {
   .main_box {
     position: absolute;
     top: 0px;
     right: 10px;
     background-color: #0a0c10;
     color: #fff;
+    z-index: 101;
   }
   .btn_one i {
     color: white;
@@ -66,10 +76,8 @@ nav a {
     right: -300px;
     height: 100vh;
     width: 250px;
-    /* background-color: rgb(255, 255, 255, 0.1); */
     box-shadow: 0 0 6px rgb(255, 255, 255, 0.5);
     transition: all 0.3s linear;
-    /* z-index: 100; */
     background-color: black;
   }
 
@@ -179,22 +187,17 @@ nav a {
   }
 }
 
-@media (min-width: 481px) {
+@media (min-width: 900px) {
   .main_box {
-    display: none;
-  }
-}
-
-@media (min-width: 1024px) {
-  .header {
     display: none;
   }
 }
 
 /* main */
 
+/* hero-section */
 .hero-section {
-  padding: 4rem 0;
+  padding-top: 12rem;
 }
 
 .container {
@@ -202,6 +205,8 @@ nav a {
   justify-content: space-between;
   gap: 30px;
 }
+
+
 
 .hero-content {
   width: 50%;
@@ -226,7 +231,7 @@ nav a {
   opacity: 0.8;
   white-space: nowrap;
   overflow: hidden;
-  border-right: 3px solid #ff6b6b; /* cursor */
+  border-right: 3px solid #ff6b6b; 
   display: inline-block;
   animation: typing 7s linear infinite, blink 0.75s step-end infinite;
 }
@@ -234,16 +239,16 @@ nav a {
 @keyframes typing {
   0% {
     width: 0;
-  } /* start typing */
+  } 
   40% {
     width: 22ch;
-  } /* finish typing */
+  } 
   60% {
     width: 24ch;
-  } /* pause */
+  } 
   100% {
     width: 0;
-  } /* delete text */
+  } 
 }
 
 @keyframes blink {
@@ -306,28 +311,28 @@ nav a {
   box-shadow: 0 0 35px rgba(168, 85, 247, 0.6);
 }
 
-/* Base Orbit */
+
 .orbit,
 .orbit2 {
   position: absolute;
   border-radius: 50%;
 }
 
-/* First Orbit */
+
 .orbit {
   width: 440px;
   height: 440px;
   animation: rotate 8s linear infinite;
 }
 
-/* Glowing Dots */
+
 .orbit::before,
 .orbit::after {
   content: "";
   position: absolute;
   width: 12px;
   height: 12px;
-  background: #a855f7; /* Bright purple */
+  background: #a855f7; 
   border-radius: 50%;
   box-shadow: 0 0 10px #a855f7, 0 0 20px #a855f7, 0 0 40px #a855f7;
   animation: pulse 2s ease-in-out infinite;
@@ -344,7 +349,7 @@ nav a {
   transform: translateX(-50%);
 }
 
-/* Second Orbit (outer ring) */
+
 .orbit2 {
   width: 460px;
   height: 460px;
@@ -354,13 +359,13 @@ nav a {
 
 .orbit2::before,
 .orbit2::after {
-  background: #c084fc; /* Lighter violet */
+  background: #c084fc; 
   width: 8px;
   height: 8px;
   box-shadow: 0 0 8px #c084fc, 0 0 15px #c084fc, 0 0 25px #c084fc;
 }
 
-/* More orbiting dots for realism */
+
 .orbit3,
 .orbit4 {
   position: absolute;
@@ -407,6 +412,7 @@ nav a {
 }
 
 /* Rotations */
+
 @keyframes rotate {
   from {
     transform: rotate(0deg);
@@ -426,6 +432,7 @@ nav a {
 }
 
 /* Glow Pulse Animation */
+
 @keyframes pulse {
   0%,
   100% {
@@ -439,10 +446,186 @@ nav a {
 }
 
 
+@media (max-width: 600px) {
+  .container {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+    gap: 20px;
+  }
 
-/* ==============================
-   ⚡ FOOTER SECTION
-============================== */
+  .hero-content{
+    width: 100%;
+
+  }
+
+  .hero-content h1 {
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+  }
+
+
+.img-container {
+  position: relative;
+  width: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+}
+
+/* features-section */
+
+.features-section1 {
+  text-align: center;
+  margin-top: 5rem;
+}
+
+.features-section1 h1 {
+  font-size: 50px;
+  font-weight: 900;
+}
+
+.features-section1 span {
+  color: purple;
+}
+
+.feature-para {
+  font-size: 20px;
+  font-weight: bolder;
+  color: gray;
+  padding: 20px 0px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Container */
+
+.cards-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.flip-card {
+  width: 330px;
+  height: 430px;
+  position: relative;
+  cursor: pointer;
+  
+}
+
+.flip-checkbox {
+  display: none;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-checkbox:checked + .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  backface-visibility: hidden;
+  color: #fff;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Front */
+.flip-card-front {
+  background: #1e1b2f;
+  text-align: left;
+  padding: 15px 15px;
+  font-size: 15px;
+}
+
+.flip-card-front p {
+  font-size: 15px;
+  margin-bottom: 10px;
+  color: gray;
+  padding-top: 10px;
+}
+
+.flip-card-front span {
+  color: white;
+}
+
+.flip-card-front img {
+  width:100%;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+/* Back */
+.flip-card-back {
+  background: #1e1b2f;
+  transform: rotateY(180deg);
+  text-align: left;
+  padding: 30px;
+}
+
+.flip-card-back p {
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+.flip-card-back ul li {
+  list-style: none;
+  font-size: 15px;
+}
+
+.flip-card-back button {
+  margin-top: 15px;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 25px;
+  background: linear-gradient(90deg, #7c3aed, #c084fc);
+  color: #fff;
+  cursor: pointer;
+  font-weight: 500;
+}
+.flip-card-back button:hover {
+  box-shadow: 0 0 15px #c084fc, 0 0 25px #7c3aed;
+}
+
+.features-section2 {
+  text-align: center;
+  margin-top: 5rem;
+}
+
+.features-section2 h1 {
+  font-size: 50px;
+  font-weight: 900;
+}
+
+.features-section2 p {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: gray;
+  padding-top: 10px;
+}
+
+/* Footer section */
 
 .footer {
   background-color: #0a0c10;
@@ -470,7 +653,7 @@ nav a {
 }
 
 .footer-col {
-  flex: 1 1 250px;
+  flex: 1 1 200px;
   margin-bottom: 30px;
 }
 
@@ -595,7 +778,7 @@ nav a {
   .footer-container {
     flex-direction: column;
     align-items: center;
-    gap: 30px;
+    gap: 25px;
     text-align: center;
   }
 
