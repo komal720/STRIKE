@@ -6,7 +6,7 @@
 
 body {
   font-family: "Inter", sans-serif;
-  background-color: #0d001e; 
+  background-color: #0d001e;
   color: #e6eef7;
   min-height: 100vh;
   padding: 40px 20px;
@@ -18,13 +18,13 @@ body {
 
 .container {
   width: 100%;
-  max-width: 1200px; 
+  max-width: 1200px;
 }
 
 /* Header Section */
 header {
   text-align: center;
-  margin-bottom: 60px; 
+  margin-bottom: 60px;
   animation: fadeDown 1s ease-out;
 }
 
@@ -33,40 +33,52 @@ header h1 {
   font-weight: 700;
   color: #ffffff;
   margin-bottom: 10px;
-  text-shadow: 0 0 15px rgba(160, 32, 240, 0.6); 
+  text-shadow: 0 0 15px rgba(160, 32, 240, 0.6);
 }
 
 header p {
-  color: #c7d2e0; 
-  font-size: 18px; 
+  color: #c7d2e0;
+  font-size: 18px;
   line-height: 1.6;
   max-width: 800px;
   margin: 0 auto;
 }
 
 .highlight {
-  color: #a020f0; 
+  color: #a020f0;
   font-weight: 700;
 }
 
 /* Mission Section */
 .about-section {
-  background: rgba(255, 255, 255, 0.03); 
+  background: rgba(255, 255, 255, 0.03);
   border-radius: 16px;
-  padding: 40px; 
+  padding: 40px;
   margin-bottom: 50px;
-  border: 1px solid rgba(160, 32, 240, 0.2); 
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5), 0 0 30px rgba(160, 32, 240, 0.1); 
+  border: 1px solid rgba(160, 32, 240, 0.2);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5), 0 0 30px rgba(160, 32, 240, 0.1);
   animation: fadeUp 1s ease-out;
 }
 
 .about-section h2 {
-  font-size: 32px; 
+  font-size: 32px;
   margin-bottom: 20px;
   color: #a020f0;
   text-align: center;
 }
+p{
+  opacity: 0.7;
+}
+p:hover {
+  opacity: 1;
+}
 
+h2{
+  opacity: 0.7;
+}
+h2:hover {
+  opacity: 1;
+}
 .about-section p {
   color: #e6eef7;
   line-height: 1.8;
@@ -96,39 +108,48 @@ header p {
 .slider-track {
   display: flex;
   width: 200%;
-  animation: swipe 20s infinite ease-in-out; 
+  animation: swipe 8s infinite ease-in-out;
 }
 
 .instructor-card {
   display: flex;
-  flex-direction: row; 
+  flex-direction: row;
   align-items: center;
-  background: #1a013a; 
+  background: #1a013a;
   padding: 30px;
   border-radius: 20px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7), 0 0 40px rgba(160, 32, 240, 0.3); 
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7), 0 0 40px rgba(160, 32, 240, 0.3);
   border: 1px solid rgba(160, 32, 240, 0.3);
-  width: 50%; 
+  width: 50%;
   flex-shrink: 0;
   box-sizing: border-box;
-  margin: 0 15px; 
+  margin: 0 15px;
 }
+
+/* .instructor-card{
+  opacity: 0.6;
+  box-shadow: 0 4px 15px rgba(160, 32, 240, 0.6);
+}
+
+ .instructor-card:hover{
+  box-shadow: 0 6px 20px rgba(160, 32, 240, 0.8);
+  transform: translateY(-2px);
+      opacity: 1;
+
+ } */
 
 .instructor-image-wrapper {
   position: relative;
-  width: 180px; 
+  width: 180px;
   height: 180px;
-  min-width: 180px; 
-  border-radius: 50%; 
+  min-width: 180px;
+  border-radius: 50%;
   overflow: hidden;
-  background: linear-gradient(
-    45deg,
-    #a020f0,
-    #ff00ff
-  ); 
-  padding: 5px; 
-  box-shadow: 0 0 30px rgba(160, 32, 240, 0.8), inset 0 0 10px rgba(255, 255, 255, 0.2); /* Intense glow */
-  margin-right: 40px; 
+  background: linear-gradient(45deg, #a020f0, #ff00ff);
+  padding: 5px;
+  box-shadow: 0 0 30px rgba(160, 32, 240, 0.8),
+    inset 0 0 10px rgba(255, 255, 255, 0.2); /* Intense glow */
+  margin-right: 40px;
 }
 
 .instructor-image {
@@ -145,11 +166,11 @@ header p {
 }
 
 .instructor-name {
-  font-size: 32px; 
+  font-size: 32px;
   font-weight: 700;
   margin-bottom: 8px;
   color: #ffffff;
-  text-shadow: 0 0 8px #a020f0; 
+  text-shadow: 0 0 8px #a020f0;
 }
 
 .instructor-tags {
@@ -160,7 +181,7 @@ header p {
 }
 
 .tag {
-  background-color: rgba(160, 32, 240, 0.2); 
+  background-color: rgba(160, 32, 240, 0.2);
   color: #e6eef7;
   padding: 6px 12px;
   border-radius: 8px;
@@ -184,8 +205,8 @@ header p {
 }
 
 .chip {
-  background-color: #3b006d; 
-  color: #ff99ff; 
+  background-color: #3b006d;
+  color: #ff99ff;
   padding: 5px 10px;
   border-radius: 20px;
   font-size: 13px;
@@ -199,22 +220,10 @@ header p {
   margin-top: 20px;
 }
 
-.btn {
-  padding: 12px 25px;
-  border-radius: 10px;
-  font-size: 16px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  text-decoration: none; /* If buttons become links */
-  display: inline-block;
-}
 
-.btn.primary {
-  background-color: #a020f0;
-  color: #ffffff;
-  border: none;
-  box-shadow: 0 4px 15px rgba(160, 32, 240, 0.6);
+
+.btn .primary {
+ 
 }
 
 .btn.primary:hover {
@@ -276,10 +285,10 @@ header p {
 /* Skills Section */
 .skills-section {
   display: flex;
-  flex-direction: row; 
+  flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  background: #1a013a; 
+  background: #1a013a;
   border-radius: 20px;
   padding: 50px;
   margin-top: 60px;
@@ -328,10 +337,16 @@ header p {
   animation: fadeUp 0.5s cubic-bezier(0.22, 1, 0.36, 1) forwards;
 }
 
+.skill-item span{
+  opacity: 0.7;
+}
+.skill-item span:hover {
+  opacity: 1;
+}
 .skill-item i {
-  color: #a020f0; 
+  color: #a020f0;
   font-size: 20px;
-  margin-top: 2px; 
+  margin-top: 2px;
   flex-shrink: 0;
 }
 
@@ -362,7 +377,6 @@ header p {
   width: 400px;
   border-radius: 15px;
   box-shadow: 0 0 50px rgba(160, 32, 240, 0.5), 0 0 80px rgba(0, 0, 0, 0.8);
-  
 }
 
 /* Footer */
@@ -406,7 +420,7 @@ footer {
   }
   50%,
   95% {
-    transform: translateX(calc(-50% - 30px)); 
+    transform: translateX(calc(-50% - 30px));
   }
   100% {
     transform: translateX(0);
@@ -446,7 +460,7 @@ footer {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin: 0 5px; 
+    margin: 0 5px;
   }
   .instructor-image-wrapper {
     margin-right: 0;
@@ -471,10 +485,10 @@ footer {
     text-align: center;
   }
   .skills-list {
-    align-items: center; 
+    align-items: center;
   }
   .skill-item {
-    text-align: left; 
+    text-align: left;
   }
   .skills-image {
     padding: 0;
@@ -550,3 +564,29 @@ footer {
   }
 }
 
+/* Custom Vertical Scrollbar */
+
+::-webkit-scrollbar {
+  width: 12px; 
+}
+
+::-webkit-scrollbar-track {
+  background: linear-gradient(180deg, #220337, #0a0c10, #230860); /* track matches background */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #7209b7, #c084fc, #7c3aed); /* purple gradient */
+  border-radius: 10px;
+  border: 3px solid rgba(34, 3, 55, 0.3); /* padding effect */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #ff00ff, #ff77ff, #a855f7); /* brighter on hover */
+}
+
+/* Firefox */
+body {
+  scrollbar-width: thin;
+  scrollbar-color: #7209b7 #220337;
+}

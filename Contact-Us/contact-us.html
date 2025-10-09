@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>STRIKE - Contact Us</title>
     <link rel="stylesheet" href="contact-us.css" />
-    <link rel="icon" href="./images/logo.png" />
+    <link rel="icon" href="/images/logo.png" />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
       rel="stylesheet"
@@ -18,21 +18,31 @@
   <body>
     <!-- header -->
 
+    <div class="intro">
+      <img src="/images/logo.png" alt="STRIKE Logo" class="intro-logo" />
+    </div>
+
     <header>
       <!-- logo -->
       <div class="header-des">
         <div>
-          <img src="./images/logo.png" alt="STRIKE-logo" />
+          <img src="/images/logo.png" alt="STRIKE-logo" />
         </div>
-        <div class="nav">
-          <nav>
-            <a href="./index.html">Home</a>
-            <a href="#">Tutorials</a>
-            <a href="/About-Us/about.html">About Us</a>
-            <a href="/Contact-Us/contact-us.html">Contact Us</a>
-            <a href="/Login/login.html" id="login-btn">Login</a>
-          </nav>
-        </div>
+        <nav>
+          <a href="/index.html" data-text="Home"><span>Home</span></a>
+          <a href="/Tutorial/tutorial.html" data-text="Tutorials"
+            ><span>Tutorials</span></a
+          >
+          <a href="/About-Us/about.html" data-text="About Us"
+            ><span>About Us</span></a
+          >
+          <a href="/Contact-Us/contact-us.html" data-text="Contact Us"
+            ><span>Contact Us</span></a
+          >
+          <a href="/Login/login.html" id="login-btn" data-text="Login"
+            >Login</a
+          >
+        </nav>
       </div>
 
       <!-- mobile -->
@@ -58,19 +68,19 @@
           <div class="menu">
             <ul>
               <li>
-                <a href="./index.html">Home</a>
+                <a href="/index.html">Home</a>
               </li>
               <li>
-                <a href="#">Tutorials</a>
+                <a href="/Tutorial/tutorial.html">Tutorials</a>
               </li>
               <li>
-                <a href="./About-Us/about.html">About Us</a>
+                <a href="/About-Us/about.html">About Us</a>
               </li>
               <li>
-                <a href="./Contact-Us/contact-us.html">Contact Us</a>
+                <a href="/Contact-Us/contact-us.html">Contact Us</a>
               </li>
               <li>
-                <a href="./Login/login.html" id="login-btn">Login</a>
+                <a href="/Login/login.html" id="loginbtn">Login</a>
               </li>
             </ul>
           </div>
@@ -195,7 +205,7 @@
           <ul>
             <li><a href="../index.html">Home</a></li>
             <li><a href="/About-Us/about.html">About Us</a></li>
-            <li><a href="#">Tutorials</a></li>
+            <li><a href="/Tutorial/tutorial.html">Tutorials</a></li>
             <li><a href="/Contact-Us/contact-us.html">Contact Us</a></li>
           </ul>
         </div>
