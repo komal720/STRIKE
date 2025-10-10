@@ -23,7 +23,7 @@ body::before {
     #220337,
     #0a0c10,
     #230860
-  ); /* Purple → Black → Blue */
+  ); 
   background-size: 400% 400%;
   animation: gradientMove 6s ease infinite;
   z-index: -1;
@@ -132,22 +132,16 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* z-index: 300; */
 }
-img {
-  width: 14rem;
-}
-
 
 img {
   width: 14rem;
-    transition: transform 0.6s ;
+  transition: transform 0.6s;
 }
 
-img:hover{
-   transform:  translateZ(5px) scale(1.1);
+img:hover {
+  transform: translateZ(5px) scale(1.1);
 }
-
 
 nav {
   display: flex;
@@ -168,14 +162,12 @@ nav a span {
   transform-style: preserve-3d;
 }
 
-
 nav a:hover span {
-  transform:  translateZ(5px) scale(1.1);
-  color: #ffdd00; /* glowing accent */
+  transform: translateZ(5px) scale(1.1);
+  color: #ffdd00;
   text-shadow: 0 5px 15px rgba(37, 60, 195, 0.7),
     0 0 10px rgba(58, 12, 163, 0.5);
 }
-
 
 #login-btn {
   background-color: purple;
@@ -190,7 +182,9 @@ nav a:hover span {
 #login-btn:hover {
   transform: scale(1.08);
   background-color: #7209b7;
-} /* Responsive */
+}
+
+/* Responsive */
 @media (max-width: 860px) {
   .main_box {
     position: absolute;
@@ -224,8 +218,10 @@ nav a:hover span {
   }
   .btn_one i:hover {
     transform: scale(1.2);
-    color: #a855f7; /* purple accent */
-  } /* === SIDEBAR MENU === */
+    color: #a855f7;
+  }
+
+  /* SIDEBAR MENU */
   .sidebar_menu {
     position: fixed;
     right: -300px;
@@ -256,7 +252,7 @@ nav a:hover span {
     position: absolute;
     width: 100%;
     height: 65px;
-    line-height: 65px; /* border-bottom: 1px solid rgba(255, 255, 255, 0.1); */
+    line-height: 65px;
     text-align: left;
     padding-left: 20px;
     color: #fff;
@@ -308,7 +304,7 @@ nav a:hover span {
   .sidebar_menu .menu i {
     color: #a855f7;
     font-size: 20px;
-  } /* Checkbox toggle animation */
+  }
   #check {
     display: none;
   }
@@ -337,7 +333,7 @@ nav a:hover span {
   img {
     width: 12rem;
   }
-} /* Get In Touch Section */
+} 
 .Get-in-touch {
   display: flex;
   justify-content: center;
@@ -503,7 +499,7 @@ nav a:hover span {
 .contact-image-section img:hover {
   transform: scale(1.02);
 }
-/* --- Contact Image Floating Animation (5s loop) --- */
+
 .contact-image-section img {
   animation: floatImage5s 5s ease-in-out infinite alternate;
 }
@@ -664,7 +660,7 @@ nav a:hover span {
   }
   .contact-image-section img {
     max-width: 450px;
-    box-shadow: 0 8px 25px #1a1728; /* margin-right: 150px; */
+    box-shadow: 0 8px 25px #1a1728;
   }
   .response-status,
   .status-badge {
@@ -697,7 +693,7 @@ nav a:hover span {
     width: 90%;
     box-shadow: 0 8px 22px #1a1728;
   }
-} 
+}
 
 /* Footer section */
 .footer {
@@ -1022,31 +1018,16 @@ nav a:hover span {
 }
 
 ::-webkit-scrollbar-track {
-  background: linear-gradient(
-    180deg,
-    #0f0337,
-    #35373b,
-    #230860
-  ); /* track matches background */
+  background: linear-gradient(180deg, #0f0337, #35373b, #230860);
   border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(
-    180deg,
-    #0e1e99,
-    #0a0c10,
-    #360e93
-  ); /* purple gradient */
+  background: linear-gradient(180deg, #0e1e99, #0a0c10, #360e93);
   border-radius: 10px;
-  border: 3px solid rgba(34, 3, 55, 0.3); /* padding effect */
+  border: 3px solid rgba(34, 3, 55, 0.3);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(
-    180deg,
-    #232fdb,
-    #0a0c10,
-    #7f0a94
-  ); /* brighter on hover */
+  background: linear-gradient(180deg, #232fdb, #0a0c10, #7f0a94);
 }

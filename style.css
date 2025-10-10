@@ -25,7 +25,7 @@ body::before {
     #220337,
     #0a0c10,
     #230860
-  ); /* Purple → Black → Blue */
+  ); 
   background-size: 400% 400%;
   animation: gradientMove 6s ease infinite;
   z-index: -1;
@@ -43,7 +43,7 @@ body::before {
   }
 }
 
-.header-des {
+.header-container {
   width: 100%;
   max-width: 1280px;
   display: flex;
@@ -58,7 +58,7 @@ body::before {
     #220337,
     #0a0c10,
     #230860
-  ); /* Purple → Black → Blue */
+  ); 
   background-size: 400% 400%;
   animation: gradientMove 6s ease infinite;
 }
@@ -141,7 +141,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* z-index: 300; */
+  
 }
 
 img {
@@ -175,7 +175,7 @@ nav a span {
 
 nav a:hover span {
   transform: translateZ(5px) scale(1.1);
-  color: #ffdd00; /* glowing accent */
+  color: #ffdd00; 
   text-shadow: 0 5px 15px rgba(37, 60, 195, 0.7),
     0 0 10px rgba(58, 12, 163, 0.5);
 }
@@ -199,7 +199,7 @@ nav a:hover span {
 /* Responsive */
 
 @media (max-width: 890px) {
-  .main_box {
+  .mobile-menu {
     position: absolute;
     top: 0;
     right: 15px;
@@ -234,7 +234,7 @@ nav a:hover span {
 
   .btn_one i:hover {
     transform: scale(1.2);
-    color: #a855f7; /* purple accent */
+    color: #a855f7; 
   }
 
   /* === SIDEBAR MENU === */
@@ -270,8 +270,7 @@ nav a:hover span {
     position: absolute;
     width: 100%;
     height: 65px;
-    line-height: 65px;
-    /* border-bottom: 1px solid rgba(255, 255, 255, 0.1); */
+    line-height: 65px;   
     text-align: left;
     padding-left: 20px;
     color: #fff;
@@ -283,6 +282,7 @@ nav a:hover span {
 
   .logo a {
     text-decoration: none;
+    
   }
 
   .sidebar_menu .btn_two i {
@@ -361,11 +361,40 @@ nav a:hover span {
 }
 
 @media (min-width: 891px) {
-  .main_box {
+  .mobile-menu {
     display: none;
   }
   img {
     width: 13rem;
+  }
+}
+
+@media (max-width: 600px) {
+  img {
+    width: 8rem;
+    transition: transform 0.6s;
+  }
+  .intro-logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1.5) rotateY(0deg);
+    animation: logo3D 1.7s ease-in-out forwards;
+    perspective: 1000px;
+  }
+
+  @keyframes logo3D {
+    0% {
+      transform: translate(-50%, -50%) scale(1.5) rotateY(0deg);
+    }
+    50% {
+      transform: translate(-50%, -50%) scale(1.7) rotateY(180deg);
+    }
+    100% {
+      top: 0px;
+      left: 0px;
+      transform: translate(0, 0) scale(1) rotateY(360deg);
+    }
   }
 }
 
@@ -455,7 +484,6 @@ p:hover {
 
 .sys-btn {
   background-color: purple;
-
   padding: 10px 20px;
   border-radius: 10px;
   font-size: 16px;
@@ -465,8 +493,7 @@ p:hover {
   font-weight: 500;
   transition: all 0.4s ease;
   box-shadow: 0 0 15px rgba(225, 42, 219, 0.477);
-  background: linear-gradient(45deg, #7f0a94, #8427cc, #6f9aff);
-  /* Smooth floating animation */
+  background: linear-gradient(45deg, #7f0a94, #8427cc, #6f9aff);  
   animation: floatSmooth 1.5s ease-in-out infinite alternate;
 }
 
@@ -506,157 +533,19 @@ p:hover {
   margin-left: 5px;
 }
 
+/* Rohit Sir Image */
 .img-container {
-  position: relative;
-  width: 50%;
-  border-radius: 50%;
-  overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
 }
-
-.img-container img {
-  width: 430px;
-  height: 460px;
+.Rohit-sir-img {
+  height: 26rem;
+  width: 26rem;
   border-radius: 50%;
-  object-fit: cover;
-  transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
-  box-shadow: 0 0 25px rgba(168, 85, 247, 0.3); /* Soft purple glow */
+    box-shadow: 0 0 25px 5px rgba(124, 14, 193, 0.7);
 }
 
-.img-container:hover img {
-  transform: scale(1.08) rotate(2deg);
-  box-shadow: 0 0 35px rgba(168, 85, 247, 0.6);
-}
-
-.orbit,
-.orbit2 {
-  position: absolute;
-  border-radius: 50%;
-}
-
-.orbit {
-  width: 440px;
-  height: 440px;
-  animation: rotate 8s linear infinite;
-}
-
-.orbit::before,
-.orbit::after {
-  content: "";
-  position: absolute;
-  width: 12px;
-  height: 12px;
-  background: #a855f7;
-  border-radius: 50%;
-  box-shadow: 0 0 10px #a855f7, 0 0 20px #a855f7, 0 0 40px #a855f7;
-  animation: pulse 2s ease-in-out infinite;
-}
-
-.orbit::before {
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-}
-.orbit::after {
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.orbit2 {
-  width: 460px;
-  height: 460px;
-  animation: rotateReverse 10s linear infinite;
-  opacity: 0.8;
-}
-
-.orbit2::before,
-.orbit2::after {
-  background: #c084fc;
-  width: 8px;
-  height: 8px;
-  box-shadow: 0 0 8px #c084fc, 0 0 15px #c084fc, 0 0 25px #c084fc;
-}
-
-.orbit3,
-.orbit4 {
-  position: absolute;
-  width: 480px;
-  height: 480px;
-  border-radius: 50%;
-  animation: rotate 12s linear infinite;
-  opacity: 0.6;
-}
-
-.orbit3::before,
-.orbit3::after,
-.orbit4::before,
-.orbit4::after {
-  content: "";
-  position: absolute;
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  background: #d8b4fe;
-  box-shadow: 0 0 6px #d8b4fe, 0 0 12px #d8b4fe, 0 0 20px #d8b4fe;
-  animation: pulse 2.5s ease-in-out infinite;
-}
-
-.orbit3::before {
-  top: 10%;
-  left: 50%;
-  transform: translateX(-50%);
-}
-.orbit3::after {
-  bottom: 10%;
-  left: 50%;
-  transform: translateX(-50%);
-}
-.orbit4::before {
-  top: 20%;
-  left: 50%;
-  transform: translateX(-50%);
-}
-.orbit4::after {
-  bottom: 20%;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-/* Rotations */
-
-@keyframes rotate {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes rotateReverse {
-  from {
-    transform: rotate(360deg);
-  }
-  to {
-    transform: rotate(0deg);
-  }
-}
-
-@keyframes pulse {
-  0%,
-  100% {
-    opacity: 0.6;
-    transform: scale(0.9);
-  }
-  50% {
-    opacity: 1;
-    transform: scale(1.1);
-  }
-}
 
 @media (max-width: 900px) {
   .container {
@@ -678,16 +567,21 @@ p:hover {
     line-height: 1.2;
     margin-bottom: 1rem;
   }
-
-  .img-container {
-    position: relative;
-    width: 100%;
+  
+ .img-container {
     border-radius: 50%;
-    overflow: hidden;
+    height: 16rem;
+    width: 16rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
+    margin: 0 auto;
+  }
+
+  .img-container .Rohit-sir-img {
+    height: 16rem;
+    width: 16rem;
+    box-shadow: none;
   }
 
   .hero-btn {
@@ -697,6 +591,8 @@ p:hover {
     margin-bottom: 10px;
   }
 }
+
+
 
 /* features-section */
 
@@ -1135,7 +1031,7 @@ p:hover {
   margin-bottom: 1.3rem;
   font-size: 0.9rem;
 }
-.btn {
+.btn-code {
   background: #007bff;
   border: none;
   padding: 9px 18px;
@@ -1145,11 +1041,11 @@ p:hover {
   cursor: pointer;
   transition: background 0.3s;
 }
-.btn a {
+.btn-code a {
   text-decoration: none;
   color: white;
 }
-.btn:hover {
+.btn-code:hover {
   background: rgba(0, 191, 255, 0.6);
 }
 
@@ -1584,6 +1480,15 @@ p:hover {
   }
 }
 
+/* btn */
+.test{
+  margin:0 auto;
+  margin-top:5rem;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+}
+
 /* Footer section */
 
 .footer {
@@ -1724,7 +1629,7 @@ p:hover {
   padding: 15px 0;
   margin-top: 20px;
   font-size: 14px;
-  color: #a1a1a1;
+  color: white;
 }
 
 /* Footer Animations */
@@ -1798,7 +1703,7 @@ p:hover {
   }
 
   .hero-content {
-    padding-left: 3rem;
+    /* padding-left: 3rem; */
   }
 
   .feature-para,

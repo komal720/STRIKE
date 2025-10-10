@@ -66,7 +66,6 @@ body::after {
   100% { background-position: 150vw 150vh; }
 }
 
-/* Glassmorphism container */
 
 .logo img {
   width: 12rem;
@@ -90,7 +89,7 @@ body::after {
   transform: translateY(-5px);
 }
 
-/* Pause animation when typing */
+
 .signup-container:focus-within {
   animation-play-state: paused;
 }
@@ -108,7 +107,7 @@ body::after {
   font-weight: 600;
 }
 
-/* Input fields - Glassmorphism */
+
 .input-group {
   position: relative;
   margin-bottom: 2em;
@@ -152,7 +151,6 @@ body::after {
   color: #7a42b1;
 }
 
-/* Signup button */
 .signup-button {
   width: 100%;
   padding: 18px;
@@ -235,7 +233,7 @@ body::after {
   .input-group input { font-size: 0.9em; }
 }
 
-/* Fade-in staggered */
+
 .signup-form .form-title {
   opacity: 0;
   animation: fadeIn 0.8s ease-out 0.2s forwards;

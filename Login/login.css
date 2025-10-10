@@ -30,7 +30,7 @@ body::before {
     #220337,
     #0a0c10,
     #230860
-  ); /* Purple → Black → Blue */
+  ); 
   background-size: 400% 400%;
   animation: gradientMove 6s ease infinite;
   z-index: -1;
@@ -48,7 +48,7 @@ body::before {
   }
 }
 
-/* 🌌 Starry Background - More & Bigger Particles */
+
 body::after {
   content: "";
   position: fixed;
@@ -164,14 +164,14 @@ body::after {
 }
 
 .login-container {
-  background: rgba(255, 255, 255, 0.05); /* semi-transparent */
+  background: rgba(255, 255, 255, 0.05); 
   border-radius: 15px;
   padding: 3em;
   width: 440px;
   text-align: center;
   border: 1px solid rgba(255, 255, 255, 0.1);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(10px); /* glass effect */
+  backdrop-filter: blur(10px); 
   transition: transform 0.3s ease;
 }
 
@@ -214,40 +214,19 @@ body::after {
   transition: color 0.3s ease;
 }
 
-/* .input-group input {
-  width: 100%;
-  padding: 15px 15px 15px 50px;
-  border: none;
-  background-color: #2a2a2a;
-  border-radius: 10px;
-  color: #f0f0f0;
-  box-sizing: border-box;
-  font-size: 1em;
-  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.4);
-  transition: background-color 0.3s ease;
-}
 
-.input-group input:focus {
-  outline: none;
-  background-color: #333333;
-  box-shadow: 0 0 0 2px #7a42b1;
-}
-
-.input-group input:focus + .icon {
-  color: #7a42b1;
-} */
 
 .input-group input {
   width: 100%;
   padding: 15px 15px 15px 50px;
-  border: 1px solid rgba(255, 255, 255, 0.2); /* subtle border */
+  border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 12px;
-  background: rgba(255, 255, 255, 0.05); /* semi-transparent */
+  background: rgba(255, 255, 255, 0.05); 
   color: #f0f0f0;
   box-sizing: border-box;
   font-size: 1em;
   box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.3);
-  backdrop-filter: blur(6px); /* glass blur */
+  backdrop-filter: blur(6px); 
   transition: all 0.3s ease;
 }
 
@@ -257,18 +236,17 @@ body::after {
 
 .input-group input:focus {
   outline: none;
-  border: 1px solid rgba(122, 66, 177, 0.8); /* purple accent on focus */
-  box-shadow: 0 0 8px rgba(122, 66, 177, 0.5); /* subtle glow */
-  background: rgba(255, 255, 255, 0.1); /* slightly brighter on focus */
+  border: 1px solid rgba(122, 66, 177, 0.8); 
+  box-shadow: 0 0 8px rgba(122, 66, 177, 0.5); 
+  background: rgba(255, 255, 255, 0.1); 
 }
-
 .input-group .icon {
-  color: rgba(255, 255, 255, 0.5); /* match input style */
+  color: rgba(255, 255, 255, 0.5); 
   transition: color 0.3s ease;
 }
 
 .input-group input:focus + .icon {
-  color: #7a42b1; /* purple accent on focus */
+  color: #7a42b1;
 }
 
 .options {
@@ -363,9 +341,6 @@ body::after {
   color: #9b59b6;
 }
 
-/* ------------------------ */
-/* RESPONSIVE DESIGN BELOW  */
-/* ------------------------ */
 
 /* Tablets */
 @media (max-width: 768px) {
@@ -441,42 +416,34 @@ body::after {
   }
 }
 
-/* ========================= */
-/* ✨ ENTRANCE ANIMATIONS ✨ */
-/* ========================= */
 
-/* ======================================== */
-/* ✨ LOGIN CONTAINER SMOOTH REPEAT ✨ */
-/* ======================================== */
 
 .login-container {
   animation: fadeSlideUpCycle 7s ease-out infinite;
 }
 
-/* Pause animation when typing */
 .login-container:focus-within {
   animation-play-state: paused;
 }
 
-/* Keyframes for smooth fadeSlideUp + hold */
+
 @keyframes fadeSlideUpCycle {
   0% {
     opacity: 0;
     transform: translateY(40px);
   }
   11.4% {
-    /* 0.8s of 7s cycle ≈ 11.4% */
+
     opacity: 1;
     transform: translateY(0);
   }
   100% {
     opacity: 1;
-    transform: translateY(0); /* hold till next cycle */
+    transform: translateY(0); 
   }
 }
 
-/* ======================================== */
-/* ELEMENTS FADE-IN (staggered) */
+
 .login-form .form-title {
   opacity: 0;
   animation: fadeIn 0.8s ease-out 0.2s forwards;

@@ -40,13 +40,11 @@ body::before {
   }
 }
 
-/* ================= CONTAINER ================= */
 .container {
   max-width: 1200px;
   margin: 0 auto;
 }
 
-/* ================= HEADINGS ================= */
 .title {
   font-size: 2.5rem;
   font-weight: 700;
@@ -77,7 +75,7 @@ body::before {
   animation: fadeInUp 1.2s ease forwards;
 }
 
-/* ================= CARD STYLE ================= */
+
 .card {
   width: 100%;
   padding: 1.5rem;
@@ -156,7 +154,7 @@ body::before {
   list-style: disc;
 }
 
-/* ================= LINKS ================= */
+
 a {
   color: #c5c5c5;
   text-decoration: none;
@@ -167,7 +165,7 @@ a:hover {
   color: #d7b4ff;
 }
 
-/* ================= ANIMATION ================= */
+
 @keyframes fadeInUp {
   0% {
     opacity: 0;
@@ -178,8 +176,8 @@ a:hover {
     transform: translateY(0);
   }
 }
+/* footer */
 
-/* ================= FOOTER ================= */
 .footer {
   padding-top: 50px;
   margin-top: 50px;
@@ -310,7 +308,7 @@ a:hover {
   color: #a1a1a1;
 }
 
-/* ================= RESPONSIVE ================= */
+/*  RESPONSIVE */
 
 /* Small screens */
 @media (max-width: 767px) {

@@ -1,11 +1,11 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>STRIKE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />    
     <link rel="stylesheet" href="./style.css" />
     <link rel="icon" href="/images/logo.png" />
+    <title>STRIKE</title>
 
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
@@ -16,7 +16,6 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
   </head>
-
   <body>
     <div>
       <!-- header -->
@@ -26,7 +25,7 @@
 
       <header>
         <!-- logo -->
-        <div class="header-des">
+        <div class="header-container">
           <div>
             <a href="./index.html"
               ><img src="./images/logo.png" alt="STRIKE-logo"
@@ -54,7 +53,7 @@
         </div>
 
         <!-- mobile -->
-        <div class="main_box">
+        <div class="mobile-menu">
           <input type="checkbox" id="check" />
           <div class="btn_one">
             <label for="check">
@@ -108,8 +107,8 @@
               <h1>Strike: Your Path to a High-Impact Tech Career.</h1>
               <p class="slogan">Learn Today. Lead Tomorrow.</p>
               <p>
-                Master Data Structures & Algorithms and Gen AI with our proven,
-                hands-on courses. Go from beginner to job-ready, faster.
+                Master Data Structures & Algorithms and Gen AI with our hands-on
+                courses. Go from beginner to job-ready, faster.
               </p>
               <div class="hero-btn">
                 <a href="./courses/courses.html" class="cta-button sys-btn"
@@ -126,11 +125,9 @@
             </div>
 
             <div class="img-container">
-              <img src="/images/rohit_negi.png" alt="Rohit-sir-img" />
-              <div class="orbit"></div>
-              <div class="orbit orbit2"></div>
+              <img class="Rohit-sir-img" src="/images/rohit_negi.png" alt="Rohit-sir-img" />
+          
             </div>
-            
           </div>
         </section>
 
@@ -138,8 +135,7 @@
           <h1>Level Up with <span>Strike Premium Courses</span></h1>
           <p class="feature-para">
             Strike courses focus on the skills companies actually look for. Get
-            hands-on experience, work on real projects, and stand out in today’s
-            competitive market.
+            hands-on experience and stand out in today’s competitive market.
           </p>
 
           <div class="card-container">
@@ -153,7 +149,7 @@
 
                     <p>
                       Crack coding interviews and learn efficient
-                      problem-solving through structured DSA lessons.
+                      problem-solving through structured lessons.
                     </p>
                     <h3>BEGINNER → ADVANCED</h3>
                     <h3>200+ Practice Problems</h3>
@@ -162,22 +158,21 @@
                 <div class="card-back">
                   <h3>Why This Course?</h3>
                   <p>
-                    Designed for coding interviews and real-world
-                    problem-solving — learn how to think like a developer and
-                    crack top tech roles.
+                    Learn how to think like a developer and crack top tech
+                    roles.
                   </p>
                   <ul>
                     <li>📘 Step-by-step DSA Roadmap</li>
                     <li>💡 500+ Curated Coding Problems</li>
-                    <li>🌳 Deep Dive: Arrays, Trees, Graphs & DP</li>
+                    <li>🌳 Arrays, Trees, Graphs & DP</li>
                     <li>🎯 Mock Interviews & Resume Tips</li>
                     <li>🚀 Placement Support & Career Guidance</li>
                   </ul>
 
                   <button class="btn">
                     <a
-                      href="https://www.youtube.com/playlist?list=PLQEaRBV9gAFu4ovJ41PywklqI7IyXwr01"
-                      >Start Learning →</a
+                      href="#"
+                      >Enroll Now →</a
                     >
                   </button>
                 </div>
@@ -188,33 +183,33 @@
             <div class="card">
               <div class="card-inner">
                 <div class="card-front">
-                  <img src="/images/genai.png" alt="HLD Course" />
+                  <img src="/images/genai.png" alt="GenAI Course" />
                   <div class="card-info">
                     <h3>Generative AI Mastery</h3>
                     <p>
-                      Learn how to build and deploy AI applications powered by
-                      ChatGPT, Llama, and Stable Diffusion.
+                      Build AI applications powered by ChatGPT, Llama, and
+                      Stable Diffusion.
                     </p>
                     <h3>BEGINNER → ADVANCED</h3>
                   </div>
                 </div>
                 <div class="card-back">
-                  <h3>What You'll Learn</h3>
+                  <h3>Why This Course?</h3>
                   <p>
-                    Understand the core ideas, architectures, and real-world
-                    power of Generative AI — from language models to creative
-                    applications.
+                    Learn how to think like a developer and crack top tech
+                    roles.
                   </p>
+
                   <ul>
                     <li>🧠 Fundamentals of Generative AI</li>
-                    <li>🏗️ LLM Architecture (GPT, Llama)</li>
+                    <li>🏗 LLM Architecture (GPT, Llama)</li>
                     <li>🎨 AI Art & Image Generation</li>
                     <li>🚀 Real-world GenAI Projects</li>
                   </ul>
                   <button class="btn">
                     <a
-                      href="https://www.youtube.com/playlist?list=PLd7PleJR_EFfRYiLdagOsv4FczMl1Cxt_"
-                      >Start Learning →</a
+                      href="#"
+                      >Enroll Now →</a
                     >
                   </button>
                 </div>
@@ -226,81 +221,89 @@
         <section class="features-section2">
           <h1>Ready to Build Your Future?</h1>
           <p class="feature-para">
-            Level up your skills in AI, coding, and more — designed by industry
+            Level up your skills in AI,coding and more-designed by industry
             experts.
           </p>
 
+          <h1 id="heading-code">
+            Master Data Structures & Algorithms in <span>C++</span>
+          </h1>
 
-          <!--  -->
+          <div class="container-code">
+            <div class="card-code">
+              <div class="icon">⚙</div>
+              <div class="title">C++ DSA</div>
+              <div class="main-text">Efficient Coding with C++</div>
+              <div class="desc">
+                Learn to build efficient algorithms, explore time complexity,
+                and implement core data structures like stacks, queues, linked
+                lists, and trees in C++.
+              </div>
+              <button class="btn-code">
+                <a
+                  href="https://www.youtube.com/playlist?list=PLQEaRBV9gAFu4ovJ41PywklqI7IyXwr01"
+                  >Start Learning</a
+                >
+              </button>
+            </div>
 
-     <h1 id="heading-code">Master Data Structures & Algorithms in <span>C++</span></h1>
-
-    <div class="container-code">
-      <div class="card-code">
-        <div class="icon">⚙️</div>
-        <div class="title">C++ DSA</div>
-        <div class="main-text">Efficient Coding with C++</div>
-        <div class="desc">
-          Learn to build efficient algorithms, explore time complexity, and
-          implement core data structures like stacks, queues, linked lists, and
-          trees in C++.
-        </div>
-        <button class="btn"><a href="https://www.youtube.com/playlist?list=PLQEaRBV9gAFu4ovJ41PywklqI7IyXwr01">Start Learning</a></button>
-      </div>
-
-      <div class="code-box">
-        <div class="code-inner">
-          <span class="line l1">#include &lt;iostream&gt;</span>
-          <span class="line l2">#include &lt;stack&gt;</span>
-          <span class="line l3">#include &lt;vector&gt;</span>
-          <span class="line l4">#include &lt;algorithm&gt;</span>
-          <span class="line l5">using namespace std;</span>
-          <span class="line l6"></span>
-          <span class="line l7">int main() {</span>
-          <span class="line l8"> stack&lt;int&gt; s;</span>
-          <span class="line l9"> for(int i=1;i&lt;=10;i++) s.push(i*5) ;</span>
-          <span class="line l10">
-            cout &lt;&lt; "Initial Stack Size: " &lt;&lt; s.size() &lt;&lt;
-            endl;</span
-          >
-          <span class="line l11"> while(!s.empty()) {</span>
-          <span class="line l12">
-            cout &lt;&lt; "Top: " &lt;&lt; s.top() &lt;&lt; endl;</span
-          >
-          <span class="line l13"> s.pop();</span>
-          <span class="line l14"> }</span>
-          <span class="line l15"> vector&lt;int&gt; arr = {5,3,9,1,6,8};</span>
-          <span class="line l16"> sort(arr.begin(), arr.end());</span>
-          <span class="line l17"> cout &lt;&lt; "Sorted: ";</span>
-          <span class="line l18">
-            for(auto v : arr) cout &lt;&lt; v &lt;&lt; " ";</span
-          >
-          <span class="line l19"> cout &lt;&lt; endl;</span>
-          <span class="line l20">
-            vector&lt;int&gt; rev(arr.rbegin(), arr.rend());</span
-          >
-          <span class="line l21"> cout &lt;&lt; "Reversed: ";</span>
-          <span class="line l22">
-            for(auto v : rev) cout &lt;&lt; v &lt;&lt; " ";</span
-          >
-          <span class="line l23"> cout &lt;&lt; endl;</span>
-          <span class="line l24"> int sum = 0;</span>
-          <span class="line l25"> for(auto v : arr) sum += v;</span>
-          <span class="line l26">
-            cout &lt;&lt; "Sum: " &lt;&lt; sum &lt;&lt; endl;</span
-          >
-          <span class="line l27">
-            cout &lt;&lt; "Average: " &lt;&lt; (double)sum / arr.size() &lt;&lt;
-            endl;</span
-          >
-          <span class="line l28">
-            cout &lt;&lt; "Program Completed" &lt;&lt; endl;</span
-          >
-          <span class="line l29"> return 0;</span>
-          <span class="line l30">}</span>
-        </div>
-      </div>
-    </div>
+            <div class="code-box">
+              <div class="code-inner">
+                <span class="line l1">#include &lt;iostream&gt;</span>
+                <span class="line l2">#include &lt;stack&gt;</span>
+                <span class="line l3">#include &lt;vector&gt;</span>
+                <span class="line l4">#include &lt;algorithm&gt;</span>
+                <span class="line l5">using namespace std;</span>
+                <span class="line l6"></span>
+                <span class="line l7">int main() {</span>
+                <span class="line l8"> stack&lt;int&gt; s;</span>
+                <span class="line l9">
+                  for(int i=1;i&lt;=10;i++) s.push(i*5) ;</span
+                >
+                <span class="line l10">
+                  cout &lt;&lt; "Initial Stack Size: " &lt;&lt; s.size()
+                  &lt;&lt; endl;</span
+                >
+                <span class="line l11"> while(!s.empty()) {</span>
+                <span class="line l12">
+                  cout &lt;&lt; "Top: " &lt;&lt; s.top() &lt;&lt; endl;</span
+                >
+                <span class="line l13"> s.pop();</span>
+                <span class="line l14"> }</span>
+                <span class="line l15">
+                  vector&lt;int&gt; arr = {5,3,9,1,6,8};</span
+                >
+                <span class="line l16"> sort(arr.begin(), arr.end());</span>
+                <span class="line l17"> cout &lt;&lt; "Sorted: ";</span>
+                <span class="line l18">
+                  for(auto v : arr) cout &lt;&lt; v &lt;&lt; " ";</span
+                >
+                <span class="line l19"> cout &lt;&lt; endl;</span>
+                <span class="line l20">
+                  vector&lt;int&gt; rev(arr.rbegin(), arr.rend());</span
+                >
+                <span class="line l21"> cout &lt;&lt; "Reversed: ";</span>
+                <span class="line l22">
+                  for(auto v : rev) cout &lt;&lt; v &lt;&lt; " ";</span
+                >
+                <span class="line l23"> cout &lt;&lt; endl;</span>
+                <span class="line l24"> int sum = 0;</span>
+                <span class="line l25"> for(auto v : arr) sum += v;</span>
+                <span class="line l26">
+                  cout &lt;&lt; "Sum: " &lt;&lt; sum &lt;&lt; endl;</span
+                >
+                <span class="line l27">
+                  cout &lt;&lt; "Average: " &lt;&lt; (double)sum / arr.size()
+                  &lt;&lt; endl;</span
+                >
+                <span class="line l28">
+                  cout &lt;&lt; "Program Completed" &lt;&lt; endl;</span
+                >
+                <span class="line l29"> return 0;</span>
+                <span class="line l30">}</span>
+              </div>
+            </div>
+          </div>
 
           <!--  -->
           <a href="./courses/courses.html" class="exp-btn"
@@ -326,10 +329,16 @@
             <p>Followers on LinkedIn</p>
           </div>
         </section>
+
+
+        <div class="hero-btn test">
+                <a href="./Testimonials.html" class="cta-button sys-btn"
+                  >Read Testimonials<i class="fa-solid fa-arrow-right sys"></i>
+                </a>
+                </div>
       </main>
 
       <!-- footer -->
-
       <footer class="footer">
         <div class="footer-top-border"></div>
         <div class="footer-container">
@@ -376,8 +385,8 @@
           <div class="footer-col">
             <h3>Contact Info</h3>
             <p><i class="fa-solid fa-envelope"></i>strike@gmail.com</p>
-            <p><i class="fa-solid fa-phone"></i>+9195216*****</p>
-            <p><i class="fa-solid fa-location-dot"></i>STRIKE Pvt. Ltd. Delhi-110001</p>
+            <p><i class="fa-solid fa-phone"></i>+91 9521687654</p>
+            <p><i class="fa-solid fa-location-dot"></i>Delhi-110001</p>
           </div>
         </div>
 
