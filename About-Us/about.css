@@ -222,10 +222,6 @@ h2:hover {
 
 
 
-.btn .primary {
- 
-}
-
 .btn.primary:hover {
   background-color: #8a00d0;
   box-shadow: 0 6px 20px rgba(160, 32, 240, 0.8);
@@ -566,27 +562,38 @@ footer {
 
 /* Custom Vertical Scrollbar */
 
+
 ::-webkit-scrollbar {
-  width: 12px; 
+  width: 12px;
 }
 
 ::-webkit-scrollbar-track {
-  background: linear-gradient(180deg, #220337, #0a0c10, #230860); /* track matches background */
+  background: linear-gradient(
+    180deg,
+    #0f0337,
+    #35373b,
+    #230860
+  ); /* track matches background */
   border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(180deg, #7209b7, #c084fc, #7c3aed); /* purple gradient */
+  background: linear-gradient(
+    180deg,
+    #0e1e99,
+    #0a0c10,
+    #360e93
+  ); /* purple gradient */
   border-radius: 10px;
   border: 3px solid rgba(34, 3, 55, 0.3); /* padding effect */
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(180deg, #ff00ff, #ff77ff, #a855f7); /* brighter on hover */
+  background: linear-gradient(
+    180deg,
+    #232fdb,
+    #0a0c10,
+    #7f0a94
+  ); /* brighter on hover */
 }
 
-/* Firefox */
-body {
-  scrollbar-width: thin;
-  scrollbar-color: #7209b7 #220337;
-}

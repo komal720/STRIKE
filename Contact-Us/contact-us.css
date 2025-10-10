@@ -39,8 +39,9 @@ body::before {
     background-position: 0% 50%;
   }
 }
+
 .header-des {
-  width: 95%;
+  width: 100%;
   max-width: 1280px;
   display: flex;
   justify-content: space-between;
@@ -48,7 +49,17 @@ body::before {
   position: fixed;
   top: 0px;
   z-index: 100;
+  box-shadow: 0 10px 25px rgba(29, 24, 90, 0.6);
+  background: linear-gradient(
+    120deg,
+    #220337,
+    #0a0c10,
+    #230860
+  ); /* Purple → Black → Blue */
+  background-size: 400% 400%;
+  animation: gradientMove 6s ease infinite;
 }
+
 .intro {
   position: fixed;
   top: 0;
@@ -113,7 +124,7 @@ body::before {
   }
   100% {
     top: 0px;
-    left: 140px;
+    left: 120px;
     transform: translate(0, 0) scale(1) rotateY(360deg);
   }
 }
@@ -121,11 +132,23 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 300;
+  /* z-index: 300; */
 }
 img {
   width: 14rem;
 }
+
+
+img {
+  width: 14rem;
+    transition: transform 0.6s ;
+}
+
+img:hover{
+   transform:  translateZ(5px) scale(1.1);
+}
+
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -138,26 +161,22 @@ nav a {
   text-decoration: none;
   transition: transform 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
+
 nav a span {
   display: inline-block;
   transition: transform 0.6s ease, color 0.4s ease;
   transform-style: preserve-3d;
 }
-nav a::before {
-  content: attr(data-text);
-  position: absolute;
-  top: 0;
-  left: 0;
-  color: #7209b7; /* purple */
-  transform: rotateY(180deg);
-  backface-visibility: hidden;
-}
+
+
 nav a:hover span {
-  transform: rotateY(180deg) translateZ(5px) scale(1.2);
+  transform:  translateZ(5px) scale(1.1);
   color: #ffdd00; /* glowing accent */
-  text-shadow: 0 5px 15px rgba(128, 0, 128, 0.7),
+  text-shadow: 0 5px 15px rgba(37, 60, 195, 0.7),
     0 0 10px rgba(58, 12, 163, 0.5);
 }
+
+
 #login-btn {
   background-color: purple;
   padding: 10px 30px;
@@ -195,7 +214,8 @@ nav a:hover span {
     color: #fff;
     font-size: 32px;
     font-weight: 700;
-    position: absolute;
+    position: fixed;
+    top: 0px;
     top: 15px;
     right: 25px;
     line-height: 60px;
@@ -454,7 +474,6 @@ nav a:hover span {
   left: 0;
 }
 
-
 .send-message-btn svg {
   width: 20px;
   height: 20px;
@@ -678,7 +697,9 @@ nav a:hover span {
     width: 90%;
     box-shadow: 0 8px 22px #1a1728;
   }
-} /* Footer section */
+} 
+
+/* Footer section */
 .footer {
   padding-top: 50px;
   margin-top: 50px;
@@ -789,6 +810,11 @@ nav a:hover span {
   color: #c5c5c5;
   line-height: 1.7;
   font-size: 15px;
+}
+
+.footer-col p i {
+  margin-right: 20px;
+  margin-bottom: 10px;
 }
 .footer-bottom {
   text-align: center;
@@ -992,26 +1018,35 @@ nav a:hover span {
 /* Custom Vertical Scrollbar */
 
 ::-webkit-scrollbar {
-  width: 12px; 
+  width: 12px;
 }
 
 ::-webkit-scrollbar-track {
-  background: linear-gradient(180deg, #220337, #0a0c10, #230860); /* track matches background */
+  background: linear-gradient(
+    180deg,
+    #0f0337,
+    #35373b,
+    #230860
+  ); /* track matches background */
   border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(180deg, #7209b7, #c084fc, #7c3aed); /* purple gradient */
+  background: linear-gradient(
+    180deg,
+    #0e1e99,
+    #0a0c10,
+    #360e93
+  ); /* purple gradient */
   border-radius: 10px;
   border: 3px solid rgba(34, 3, 55, 0.3); /* padding effect */
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(180deg, #ff00ff, #ff77ff, #a855f7); /* brighter on hover */
-}
-
-/* Firefox */
-body {
-  scrollbar-width: thin;
-  scrollbar-color: #7209b7 #220337;
+  background: linear-gradient(
+    180deg,
+    #232fdb,
+    #0a0c10,
+    #7f0a94
+  ); /* brighter on hover */
 }
