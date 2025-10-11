@@ -43,7 +43,7 @@ body::before {
   }
 }
 
-/* Starry Background */
+
 body::after {
   content: "";
   position: fixed;
@@ -219,7 +219,7 @@ body::after {
   color: #9b59b6;
 }
 
-/* Responsive */
+
 @media (max-width: 768px) {
   body {
     padding: 2em;

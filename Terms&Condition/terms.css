@@ -1,4 +1,3 @@
-/* ================= RESET & BASE ================= */
 * {
   margin: 0;
   padding: 0;
@@ -176,7 +175,9 @@ a:hover {
     transform: translateY(0);
   }
 }
-/* Footer section */
+
+
+
 
 .footer {
   padding-top: 50px;
@@ -319,7 +320,7 @@ a:hover {
   color: white;
 }
 
-/* Footer Animations */
+
 
 @keyframes fadeUp {
   from {
@@ -341,7 +342,7 @@ a:hover {
   }
 }
 
-/* Footer Responsive */
+
 
 @media (max-width: 900px) {
   .footer-container {
@@ -380,7 +381,7 @@ a:hover {
   }
 }
 
-/* Custom scrollbar */
+
 ::-webkit-scrollbar {
   width: 12px;
 }
@@ -397,7 +398,7 @@ a:hover {
   background: linear-gradient(180deg, #ff00ff, #ff77ff, #a855f7);
 }
 
-/* Firefox scrollbar */
+
 body {
   scrollbar-width: thin;
   scrollbar-color: #7209b7 #220337;

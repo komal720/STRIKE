@@ -35,8 +35,6 @@ body::before {
   }
 }
 
-/* banner */
-
 .top-banner {
   background: linear-gradient(120deg, #4d1570, #0a0c10, #3607a3);
   color: #00eaff;
@@ -57,7 +55,6 @@ body::before {
   backdrop-filter: blur(4px);
 }
 
-/* Shimmer Effect */
 .top-banner::before {
   content: "";
   position: absolute;
@@ -83,7 +80,6 @@ body::before {
   }
 }
 
-/* Moving Text  */
 .marquee {
   display: inline-block;
   white-space: nowrap;
@@ -287,8 +283,6 @@ nav a:hover span {
   background: linear-gradient(45deg, #6f9aff, #8427cc, #7f0a94);
 }
 
-/* Responsive */
-
 @media (max-width: 890px) {
   .mobile-menu {
     position: absolute;
@@ -329,7 +323,6 @@ nav a:hover span {
     color: #a855f7;
   }
 
-  /* === SIDEBAR MENU === */
   .sidebar_menu {
     position: fixed;
     right: -300px;
@@ -423,7 +416,6 @@ nav a:hover span {
     font-size: 20px;
   }
 
-  /* Checkbox toggle animation */
   #check {
     display: none;
   }
@@ -547,7 +539,6 @@ nav a:hover span {
   box-sizing: border-box;
 }
 
-/* Left Card */
 .card-code-Doubt {
   position: relative;
   background: linear-gradient(
@@ -679,7 +670,6 @@ nav a:hover span {
   white-space: nowrap;
 }
 
-/* Cursor blink */
 @keyframes blinkCursor {
   50% {
     border-color: transparent;
@@ -709,7 +699,6 @@ nav a:hover span {
   box-sizing: border-box;
 }
 
-/* Left Card */
 .card-code-Doubt {
   position: relative;
   background: linear-gradient(
@@ -753,6 +742,7 @@ nav a:hover span {
   font-size: 1rem;
   margin-bottom: 0.4rem;
 }
+
 .main-text-Doubt {
   font-size: 1.4rem;
   font-weight: 700;
@@ -787,7 +777,7 @@ nav a:hover span {
   background: #007bff;
 }
 
-/* Code Box */
+
 .code-box-Doubt {
   background: linear-gradient(
     145deg,
@@ -843,14 +833,14 @@ nav a:hover span {
   white-space: nowrap;
 }
 
-/* Cursor blink */
+
 @keyframes blinkCursor {
   50% {
     border-color: transparent;
   }
 }
 
-/* Typing lines — all start from 0ch */
+
 .l1 {
   width: 0ch;
   animation: typing1 1.8s steps(12, end) forwards 0s,
@@ -998,7 +988,9 @@ nav a:hover span {
   animation: typing29 1.6s steps(1, end) forwards 44.9s,
     blinkCursor 0.7s step-end infinite;
 }
-/* Keyframes */
+
+
+
 @keyframes typing1 {
   to {
     width: 12ch;
@@ -1164,6 +1156,8 @@ nav a:hover span {
     height: 340px;
   }
 }
+
+
 @media (max-width: 480px) {
   #heading-code-Doubt {
     font-size: 20px;
@@ -1186,7 +1180,7 @@ nav a:hover span {
   }
 }
 
-/*  Larger Screen Adjustments */
+
 @media (min-width: 669x) and (max-width: 900px) {
   #heading-code-Doubt {
     font-size: 20px;
@@ -1357,7 +1351,9 @@ nav a:hover span {
   animation: typing29 1.6s steps(1, end) forwards 44.9s,
     blinkCursor 0.7s step-end infinite;
 }
-/* Keyframes */
+
+
+
 @keyframes typing1 {
   to {
     width: 12ch;
@@ -1544,7 +1540,7 @@ nav a:hover span {
   }
 }
 
-/* ---------- Larger Screen Adjustments ---------- */
+
 @media (min-width: 669x) and (max-width: 900px) {
   #heading-code-Doubt {
     font-size: 20px;

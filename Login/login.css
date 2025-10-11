@@ -306,7 +306,7 @@ body::after {
   color: #9b59b6;
 }
 
-/* Tablets */
+
 @media (max-width: 768px) {
   body {
     padding: 2em;
@@ -328,7 +328,7 @@ body::after {
   }
 }
 
-/* Phones */
+
 @media (max-width: 480px) {
   body {
     align-items: flex-start;
@@ -367,7 +367,7 @@ body::after {
   }
 }
 
-/* Ultra small devices */
+
 @media (max-width: 400px) {
   .form-title {
     font-size: 1.2em;

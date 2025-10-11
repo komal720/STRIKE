@@ -40,7 +40,7 @@ body::before {
   }
 }
 
-/* banner */
+
 
 .top-banner {
   background: linear-gradient(120deg, #4d1570, #0a0c10, #3607a3);
@@ -62,7 +62,7 @@ body::before {
   backdrop-filter: blur(4px);
 }
 
-/* Shimmer Effect */
+
 .top-banner::before {
   content: "";
   position: absolute;
@@ -88,7 +88,7 @@ body::before {
   }
 }
 
-/* Moving Text  */
+
 .marquee {
   display: inline-block;
   white-space: nowrap;
@@ -294,7 +294,6 @@ nav a:hover span {
 }
 
 
-/* Responsive */
 
 @media (max-width: 890px) {
   .mobile-menu {
@@ -336,7 +335,7 @@ nav a:hover span {
     color: #a855f7;
   }
 
-  /* === SIDEBAR MENU === */
+  
   .sidebar_menu {
     position: fixed;
     right: -300px;
@@ -430,7 +429,7 @@ nav a:hover span {
     font-size: 20px;
   }
 
-  /* Checkbox toggle animation */
+ 
   #check {
     display: none;
   }
@@ -525,9 +524,7 @@ nav a:hover span {
   }
 }
 
-/* main */
 
-/* hero-section */
 .hero-section {
   padding-top: 10rem;
 }
@@ -635,7 +632,7 @@ p:hover {
     transform: translateY(0);
   }
   100% {
-    transform: translateY(15px); /* moves up 15px smoothly */
+    transform: translateY(15px); 
   }
 }
 
@@ -650,8 +647,7 @@ p:hover {
   font-weight: 500;
   transition: all 0.4s ease;
   background-color: transparent;
-  border: 1px solid white;
-  /* Smooth floating animation */
+  border: 1px solid white;  
   animation: floatSmooth 1.5s ease-in-out infinite alternate;
 }
 
@@ -661,7 +657,7 @@ p:hover {
   margin-left: 5px;
 }
 
-/* Rohit Sir Image */
+
 .img-container {
   display: flex;
   justify-content: center;
@@ -719,7 +715,7 @@ p:hover {
   }
 }
 
-/* features-section */
+
 
 .features-section1 {
   text-align: center;
@@ -768,7 +764,7 @@ p:hover {
   margin: 0 auto;
 }
 
-/* card */
+
 
 .card-container {
   display: flex;
@@ -872,6 +868,43 @@ p:hover {
   box-shadow: 0 0 5px #c084fc, 0 0 25px #7c3aed;
 }
 
+.card input {
+  display: none;
+}
+
+.card:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card input:checked + .card-inner {
+  transform: rotateY(180deg);
+}
+
+@media (max-width: 768px) {
+  .card:hover .card-inner {
+    transform: none;
+  }
+}
+
+.card label,
+.card-inner {
+  display: block;
+}
+
+.card-inner {
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.7s;
+}
+
+.card label {
+  cursor: pointer;
+}
+
+
 .features-section2 {
   text-align: center;
   margin-top: 5rem;
@@ -881,6 +914,7 @@ p:hover {
   font-size: 50px;
   font-weight: 900;
 }
+
 
 .features-section2 p {
   font-size: 24px;
@@ -916,7 +950,7 @@ p:hover {
     transform: translateY(0);
   }
   100% {
-    transform: translateY(-15px); /* moves up 15px smoothly */
+    transform: translateY(-15px);
   }
 }
 
@@ -939,7 +973,7 @@ p:hover {
   color: #ffffff;
 }
 
-/* ========== Base Section ========== */
+
 .stats-section {
   display: flex;
   flex-wrap: wrap;
@@ -954,12 +988,10 @@ p:hover {
   margin-top: 7rem;
   border-color: #ab3cff;
   box-shadow: 0 0 30px rgba(163, 16, 158, 0.477);
-
-  /* 🌊 Floating container animation */
   animation: containerFloat 4s ease-in-out infinite;
 }
 
-/* ✨ Floating effect for the entire stats-section */
+
 @keyframes containerFloat {
   0%,
   100% {
@@ -970,7 +1002,7 @@ p:hover {
   }
 }
 
-/* ========== Card Style ========== */
+
 .stat-card {
   flex: 1 1 220px;
   background: rgba(255, 255, 255, 0.05);
@@ -1013,7 +1045,7 @@ p:hover {
   margin-top: 0.5rem;
 }
 
-/* ========== Auto Glow + Lift ========== */
+
 @keyframes cardCycle {
   0%,
   20% {
@@ -1038,7 +1070,8 @@ p:hover {
   }
 }
 
-/* 🔁 Glow timing (one-by-one sequence) */
+
+
 .stat-card:nth-child(1)::before {
   animation: cardCycle 10s infinite;
   animation-delay: 0s;
@@ -1056,7 +1089,7 @@ p:hover {
   animation-delay: 6s;
 }
 
-/* 🕊️ Lift motion in sync */
+
 .stat-card:nth-child(1) {
   animation: liftCycle 10s infinite;
   animation-delay: 0s;
@@ -1074,7 +1107,8 @@ p:hover {
   animation-delay: 6s;
 }
 
-/* ========== Responsive ========== */
+
+
 @media (max-width: 992px) {
   .stats-section {
     gap: 1.5rem;
@@ -1092,7 +1126,7 @@ p:hover {
   }
 }
 
-/* feature section responsive */
+
 
 @media (max-width: 900px) {
   .card-front img {
@@ -1126,7 +1160,7 @@ p:hover {
   box-sizing: border-box;
 }
 
-/* Left Card */
+
 .card-code {
   position: relative;
   background: linear-gradient(
@@ -1227,11 +1261,11 @@ p:hover {
   transform: translateY(-8px);
 }
 .code-inner {
-  display: block; /* <-- avoid inline-block baseline shifts */
+  display: block; 
   width: 100%;
   padding-left: 40px;
   position: relative;
-  will-change: transform; /* hint to browser for smoother animation */
+  will-change: transform; 
   animation: scrollDown 60s linear infinite;
   transform: translate3d(0, 0, 0);
   text-align: left;
@@ -1248,7 +1282,7 @@ p:hover {
   }
 }
 
-/* Base line typing animation */
+
 .line {
   display: block;
   overflow: hidden;
@@ -1256,7 +1290,7 @@ p:hover {
   /* border-right: 2px solid #00eaff; */
 }
 
-/* All typing keyframes — untouched */
+
 .l1 {
   width: 0ch;
   animation: typing1 1.8s steps(19, end) forwards 0s;
@@ -1379,7 +1413,8 @@ p:hover {
   border-right: none;
 }
 
-/* Keyframes */
+
+
 @keyframes typing1 {
   to {
     width: 19ch;
@@ -1587,7 +1622,7 @@ p:hover {
   }
 }
 
-/* ---------- Larger Screen Adjustments ---------- */
+
 @media (min-width: 600px) {
   #heading-code {
     font-size: 20px;
@@ -1629,7 +1664,7 @@ p:hover {
   }
 }
 
-/* btn */
+
 .test {
   margin: 0 auto;
   margin-top: 5rem;
@@ -1638,7 +1673,7 @@ p:hover {
   justify-content: center;
 }
 
-/* Footer section */
+
 
 .footer {
   padding-top: 50px;
@@ -1781,7 +1816,7 @@ p:hover {
   color: white;
 }
 
-/* Footer Animations */
+
 
 @keyframes fadeUp {
   from {
@@ -1803,7 +1838,7 @@ p:hover {
   }
 }
 
-/* Footer Responsive */
+
 
 @media (max-width: 900px) {
   .footer-container {
@@ -1842,7 +1877,7 @@ p:hover {
   }
 }
 
-/* EXTRA LARGE SCREENS (1440px+) */
+
 
 @media (min-width: 1440px) {
 
@@ -1852,7 +1887,7 @@ p:hover {
   }
 }
 
-/* LARGE SCREENS (1200px–1439px) */
+
 
 @media (max-width: 1439px) and (min-width: 1021px) {
   .container {
@@ -1869,7 +1904,7 @@ p:hover {
   }
 }
 
-/* MEDIUM SCREENS (768px–1020px) */
+
 
 @media (max-width: 1020px) and (min-width: 768px) {
   .hero-section {
@@ -1914,7 +1949,7 @@ p:hover {
   }
 }
 
-/* SMALL SCREENS (480px–767px) */
+
 
 @media (max-width: 767px) {
   header img {
@@ -1969,7 +2004,7 @@ p:hover {
   }
 }
 
-/*  EXTRA SMALL SCREENS (320px–479px) */
+
 
 @media (max-width: 479px) {
 
@@ -2378,7 +2413,7 @@ p:hover {
   }
 }
 
-/*  STRIKE Section */
+
 .STRIKE-advantage {
   color: #fff;
   padding: 80px 10%;
@@ -2411,7 +2446,7 @@ p:hover {
   }
 }
 
-/* Layout */
+
 .strike-content {
   display: flex;
   align-items: center;
@@ -2422,7 +2457,7 @@ p:hover {
   animation: fadeSlide 1.5s ease forwards;
 }
 
-/* Text side */
+
 .text-strike {
   flex: 1 1 300px;
   max-width: 500px;
@@ -2433,7 +2468,7 @@ p:hover {
   margin: 0 auto;
 }
 
-/* Branding */
+
 .brand-strike {
   text-align: center;
   margin-bottom: 15px;
@@ -2475,7 +2510,7 @@ p:hover {
   animation: fadeUp 1.2s ease 0.8s forwards;
 }
 
-/* Founder tag */
+
 .strike-founder {
   margin-top: 20px;
   text-align: center;
@@ -2510,7 +2545,7 @@ p:hover {
   -webkit-text-fill-color: transparent;
 }
 
-/* Chart Section */
+
 .chart-strike {
   flex: 1 1 450px;
   background: rgba(255, 255, 255, 0.08);
@@ -2618,7 +2653,6 @@ p:hover {
   background: #888;
 }
 
-/* Animations */
 @keyframes fadeUp {
   from {
     opacity: 0;
@@ -2667,7 +2701,7 @@ p:hover {
   }
 }
 
-/* Responsive Enhancements */
+
 @media (max-width: 1024px) {
   .STRIKE-advantage {
     margin: 3rem 1rem;
@@ -2743,7 +2777,7 @@ p:hover {
   }
 }
 
-/* Custom Vertical Scrollbar */
+
 
 ::-webkit-scrollbar {
   width: 12px;
@@ -2755,7 +2789,7 @@ p:hover {
     #0f0337,
     #35373b,
     #230860
-  ); /* track matches background */
+  );
   border-radius: 10px;
 }
 
@@ -2765,9 +2799,9 @@ p:hover {
     #0e1e99,
     #0a0c10,
     #360e93
-  ); /* purple gradient */
+  ); 
   border-radius: 10px;
-  border: 3px solid rgba(34, 3, 55, 0.3); /* padding effect */
+  border: 3px solid rgba(34, 3, 55, 0.3); 
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -2776,5 +2810,5 @@ p:hover {
     #232fdb,
     #0a0c10,
     #7f0a94
-  ); /* brighter on hover */
+  ); 
 }

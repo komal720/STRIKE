@@ -16,7 +16,7 @@ The challenge focused on building an engaging website using only HTML and CSS �
 
 ## 🚀 Live Demo
 
-🔗 [View Project Here](#)
+🔗 https://strike-coderarmy-komal.netlify.app/
 
 ---
 

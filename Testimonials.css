@@ -462,7 +462,7 @@ body::before {
   color: white;
 }
 
-/* Footer Animations */
+
 
 @keyframes fadeUp {
   from {
@@ -484,7 +484,7 @@ body::before {
   }
 }
 
-/* Footer Responsive */
+
 
 @media (max-width: 900px) {
   .footer-container {
@@ -522,7 +522,7 @@ body::before {
     font-size: 13px;
   }
 }
-/* Custom Vertical Scrollbar */
+
 
 ::-webkit-scrollbar {
   width: 12px;
@@ -534,7 +534,7 @@ body::before {
     #0f0337,
     #35373b,
     #230860
-  ); /* track matches background */
+  ); 
   border-radius: 10px;
 }
 
@@ -544,9 +544,9 @@ body::before {
     #0e1e99,
     #0a0c10,
     #360e93
-  ); /* purple gradient */
+  );
   border-radius: 10px;
-  border: 3px solid rgba(34, 3, 55, 0.3); /* padding effect */
+  border: 3px solid rgba(34, 3, 55, 0.3); 
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -555,5 +555,5 @@ body::before {
     #232fdb,
     #0a0c10,
     #7f0a94
-  ); /* brighter on hover */
+  ); 
 }

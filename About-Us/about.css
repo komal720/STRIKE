@@ -21,7 +21,7 @@ body {
   max-width: 1200px;
 }
 
-/* Header Section */
+
 header {
   text-align: center;
   margin-bottom: 60px;
@@ -49,7 +49,7 @@ header p {
   font-weight: 700;
 }
 
-/* Mission Section */
+
 .about-section {
   background: rgba(255, 255, 255, 0.03);
   border-radius: 16px;
@@ -86,7 +86,7 @@ h2:hover {
   text-align: center;
 }
 
-/* Instructors Section - Slider */
+
 .instructors-section {
   text-align: center;
   margin-bottom: 60px;
@@ -229,7 +229,7 @@ h2:hover {
   transform: translateY(-2px);
 }
 
-/* Slider Dots */
+
 .slider-dots {
   display: flex;
   justify-content: center;
@@ -264,7 +264,7 @@ h2:hover {
   }
 }
 
-/* Skills Section */
+
 .skills-section {
   display: flex;
   flex-direction: row;
@@ -361,7 +361,7 @@ h2:hover {
   box-shadow: 0 0 50px rgba(160, 32, 240, 0.5), 0 0 80px rgba(0, 0, 0, 0.8);
 }
 
-/* Animations */
+
 @keyframes fadeUp {
   0% {
     opacity: 0;
@@ -384,7 +384,7 @@ h2:hover {
   }
 }
 
-/* Slider Animation */
+
 @keyframes swipe {
   0%,
   45% {
@@ -399,7 +399,7 @@ h2:hover {
   }
 }
 
-/* Footer section */
+
 
 .footer {
   padding-top: 50px;
@@ -542,7 +542,7 @@ h2:hover {
   color: white;
 }
 
-/* Footer Animations */
+
 
 @keyframes fadeUp {
   from {
@@ -564,7 +564,7 @@ h2:hover {
   }
 }
 
-/* Footer Responsive */
+
 
 @media (max-width: 900px) {
   .footer-container {
@@ -603,7 +603,7 @@ h2:hover {
   }
 }
 
-/* Responsive  */
+
 @media (max-width: 1024px) {
   header h1 {
     font-size: 40px;
@@ -737,7 +737,7 @@ h2:hover {
   }
 }
 
-/* Custom Vertical Scrollbar */
+
 
 ::-webkit-scrollbar {
   width: 12px;
@@ -749,7 +749,7 @@ h2:hover {
     #0f0337,
     #35373b,
     #230860
-  ); /* track matches background */
+  ); 
   border-radius: 10px;
 }
 
@@ -759,9 +759,9 @@ h2:hover {
     #0e1e99,
     #0a0c10,
     #360e93
-  ); /* purple gradient */
+  );
   border-radius: 10px;
-  border: 3px solid rgba(34, 3, 55, 0.3); /* padding effect */
+  border: 3px solid rgba(34, 3, 55, 0.3); 
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -770,5 +770,5 @@ h2:hover {
     #232fdb,
     #0a0c10,
     #7f0a94
-  ); /* brighter on hover */
+  );
 }

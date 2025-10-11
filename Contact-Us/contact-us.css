@@ -190,7 +190,7 @@ nav a:hover span {
   background: linear-gradient(45deg, #6f9aff, #8427cc, #7f0a94);
 }
 
-/* Responsive */
+
 
 @media (max-width: 890px) {
   .mobile-menu {
@@ -232,7 +232,6 @@ nav a:hover span {
     color: #a855f7;
   }
 
-  /* SIDEBAR MENU */
   .sidebar_menu {
     position: fixed;
     right: -300px;
@@ -326,7 +325,7 @@ nav a:hover span {
     font-size: 20px;
   }
 
-  /* Checkbox toggle animation */
+ 
   #check {
     display: none;
   }
@@ -421,7 +420,6 @@ nav a:hover span {
   }
 }
 
-/* get in touch */
 
 .Get-in-touch {
   display: flex;
@@ -537,7 +535,7 @@ nav a:hover span {
   background-color: #a020f0;
   transform: scale(1.05);
 }
-/* --- Send Button Ripple Effect --- */
+
 .send-message-btn {
   position: relative;
   overflow: hidden;
@@ -605,7 +603,7 @@ nav a:hover span {
     transform: translateY(0px) scale(1);
   }
 }
-/* Floating badges */
+
 .status-badge {
   position: absolute;
   top: 130px;
@@ -651,7 +649,7 @@ nav a:hover span {
   fill: #38c172;
   width: 16px;
   height: 16px;
-} /* --- Animations --- */
+} 
 @keyframes moveUpDown {
   0% {
     top: 130px;
@@ -689,6 +687,7 @@ nav a:hover span {
     transform: scale(1);
   }
 }
+
 @keyframes slideFromLeft {
   from {
     opacity: 0;
@@ -699,6 +698,7 @@ nav a:hover span {
     transform: translateX(0);
   }
 }
+
 @keyframes slideFromRight {
   from {
     opacity: 0;
@@ -708,7 +708,10 @@ nav a:hover span {
     opacity: 1;
     transform: translateX(0);
   }
-} /* Responsive */
+}
+
+
+
 @media (max-width: 1024px) {
   .contact-form-section {
     padding-right: 30px;
@@ -718,6 +721,8 @@ nav a:hover span {
     margin-top: 40px;
   }
 }
+
+
 @media (max-width: 900px) {
   .Get-in-touch {
     padding: 6rem 1rem 1rem 1rem;
@@ -757,6 +762,8 @@ nav a:hover span {
     display: none;
   }
 }
+
+
 @media (max-width: 480px) {
   .contact-form-section h1 {
     font-size: 1.8rem;
@@ -784,7 +791,7 @@ nav a:hover span {
     box-shadow: 0 8px 22px #1a1728;
   }
 }
-/* Footer section */
+
 
 .footer {
   padding-top: 50px;
@@ -927,7 +934,7 @@ nav a:hover span {
   color: white;
 }
 
-/* Footer Animations */
+
 
 @keyframes fadeUp {
   from {
@@ -949,7 +956,7 @@ nav a:hover span {
   }
 }
 
-/* Footer Responsive */
+
 
 @media (max-width: 900px) {
   .footer-container {
@@ -987,7 +994,10 @@ nav a:hover span {
     font-size: 13px;
   }
 }
-/* EXTRA LARGE SCREENS (1440px+) */
+
+
+
+
 @media (min-width: 1440px) {
   body {
     max-width: 1440px;
@@ -1002,7 +1012,10 @@ nav a:hover span {
     font-size: 1.3rem;
   }
 }
-/* LARGE SCREENS (1200px–1439px) */
+
+
+
+
 @media (max-width: 1439px) and (min-width: 1021px) {
   .container {
     gap: 40px;
@@ -1014,7 +1027,11 @@ nav a:hover span {
     width: 400px;
     height: 400px;
   }
-} /* MEDIUM SCREENS (768px–1020px) */
+} 
+
+
+
+
 @media (max-width: 1020px) and (min-width: 768px) {
   .hero-section {
     padding-top: 8rem;
@@ -1049,7 +1066,12 @@ nav a:hover span {
   .cards-container {
     gap: 1.5rem;
   }
-} /* SMALL SCREENS (480px–767px) */
+}
+
+
+
+
+
 @media (max-width: 767px) {
   header img {
     width: 9rem;
@@ -1090,7 +1112,12 @@ nav a:hover span {
   .footer-col h3 {
     font-size: 16px;
   }
-} /* EXTRA SMALL SCREENS (320px–479px) */
+}
+
+
+
+
+
 @media (max-width: 479px) {
   body {
     padding: 0 10px;
@@ -1131,7 +1158,7 @@ nav a:hover span {
   }
 }
 
-/* Custom Vertical Scrollbar */
+
 
 ::-webkit-scrollbar {
   width: 12px;
