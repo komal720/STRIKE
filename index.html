@@ -1,8 +1,8 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
     <link rel="icon" href="/images/logo.png" />
     <title>STRIKE</title>
@@ -17,7 +17,11 @@
     />
   </head>
   <body>
-    <div>
+    <div class="top-banner">
+      <div class="marquee">🔥 Get ready — STRIKE hits on October 18! 🔥</div>
+    </div>
+
+    <div class="body-container">
       <!-- header -->
       <div class="intro">
         <img src="/images/logo.png" alt="STRIKE Logo" class="intro-logo" />
@@ -37,14 +41,14 @@
               ><span>Tutorials</span></a
             >
 
-            <a href="./Testimonials.html" data-text="Contact Us"
-              ><span>Testimonials</span></a
-            >
             <a href="./About-Us/about.html" data-text="About Us"
               ><span>About Us</span></a
             >
             <a href="./Contact-Us/contact-us.html" data-text="Contact Us"
               ><span>Contact Us</span></a
+            >
+            <a href="./Help.html" data-text="Contact Us"
+              ><span>Help Zone</span></a
             >
             <a href="./Login/login.html" id="login-btn" data-text="Login"
               >Login</a
@@ -80,14 +84,15 @@
                 <li>
                   <a href="./Tutorial/tutorial.html">Tutorials</a>
                 </li>
-                <li>
-                  <a href="./Testimonials.html">Testimonials</a>
-                </li>
+
                 <li>
                   <a href="./About-Us/about.html">About Us</a>
                 </li>
                 <li>
                   <a href="./Contact-Us/contact-us.html">Contact Us</a>
+                </li>
+                <li>
+                  <a href="./Help.html">Help Zone</a>
                 </li>
                 <li>
                   <a href="./Login/login.html" id="loginbtn">Login</a>
@@ -99,7 +104,6 @@
       </header>
 
       <!-- main -->
-
       <main>
         <section class="hero-section">
           <div class="container">
@@ -125,8 +129,11 @@
             </div>
 
             <div class="img-container">
-              <img class="Rohit-sir-img" src="/images/rohit_negi.png" alt="Rohit-sir-img" />
-          
+              <img
+                class="Rohit-sir-img"
+                src="/images/rohit_negi.png"
+                alt="Rohit-sir-img"
+              />
             </div>
           </div>
         </section>
@@ -170,10 +177,7 @@
                   </ul>
 
                   <button class="btn">
-                    <a
-                      href="#"
-                      >Enroll Now →</a
-                    >
+                    <a href="#">Enroll Now →</a>
                   </button>
                 </div>
               </div>
@@ -207,10 +211,7 @@
                     <li>🚀 Real-world GenAI Projects</li>
                   </ul>
                   <button class="btn">
-                    <a
-                      href="#"
-                      >Enroll Now →</a
-                    >
+                    <a href="#">Enroll Now →</a>
                   </button>
                 </div>
               </div>
@@ -330,12 +331,98 @@
           </div>
         </section>
 
-
         <div class="hero-btn test">
-                <a href="./Testimonials.html" class="cta-button sys-btn"
-                  >Read Testimonials<i class="fa-solid fa-arrow-right sys"></i>
-                </a>
+          <a href="./Testimonials.html" class="cta-button sys-btn"
+            >Read Testimonials<i class="fa-solid fa-arrow-right sys"></i>
+          </a>
+        </div>
+
+        <section class="certificate-section">
+          <div class="cert-left">
+            <h2>Unlock Your <span>Potential.</span></h2>
+
+            <div class="cert-points">
+              <div class="cert-point">
+                <div>
+                  <i class="fa-solid fa-award"></i>
                 </div>
+                <div>
+                  <h3>Fast-Track Your Career</h3>
+                  <p>
+                    Learn, practice, and become internship-ready in just a few
+                    months!
+                  </p>
+                </div>
+              </div>
+
+              <div class="cert-point">
+                <div><i class="fa-solid fa-medal"></i></div>
+                <div>
+                  <h3>Code. Learn. Conquer.</h3>
+                  <p>
+                    The path is simple: follow guidance, put in effort, and get
+                    ready for your first big tech role.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <button class="cert-enroll-btn">
+              <a href="./Login/login.html">
+                Enroll Now <i class="fa-solid fa-arrow-right sys"></i
+              ></a>
+            </button>
+          </div>
+
+          <div class="cert-right" style="position: relative">
+            <p class="sub-head">
+              Earn Your Certification, <span>Land Your Dream Role</span>
+            </p>
+            <img src="/images/Get-certificate.png" alt="Certificate Preview" />
+            <i
+              class="fa-solid fa-award floating-icon"
+              style="
+                position: absolute;
+                top: -20px;
+                left: 10%;
+                font-size: 1.5rem;
+                color: #ffd700;
+              "
+            ></i>
+            <i
+              class="fa-solid fa-medal floating-icon"
+              style="
+                position: absolute;
+                top: 10%;
+                right: 5%;
+                font-size: 1.5rem;
+                color: #ff8c00;
+              "
+            ></i>
+            <i
+              class="fa-solid fa-award floating-icon"
+              style="
+                position: absolute;
+                bottom: 10px;
+                left: 20%;
+                font-size: 1.2rem;
+                color: #ffd700;
+              "
+            ></i>
+            <i
+              class="fa-solid fa-medal floating-icon"
+              style="
+                position: absolute;
+                bottom: 15%;
+                right: 15%;
+                font-size: 1.2rem;
+                color: #ff8c00;
+              "
+            ></i>
+          </div>
+        </section>
+
+
       </main>
 
       <!-- footer -->

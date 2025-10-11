@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Strike</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="Help.css" />
+  </head>
+  <body>
+
+      <div class="top-banner">
+      <div class="marquee">🔥 Get ready — STRIKE hits on October 18! 🔥</div>
+    </div>
+
+
+      <!-- header -->
+      <div class="intro">
+        <img src="/images/logo.png" alt="STRIKE Logo" class="intro-logo" />
+      </div>
+
+      <header>
+        <!-- logo -->
+        <div class="header-container">
+          <div>
+            <a href="./index.html"
+              ><img src="./images/logo.png" alt="STRIKE-logo"
+            /></a>
+          </div>
+          <nav>
+            <a href="./index.html" data-text="Home"><span>Home</span></a>
+            <a href="./Tutorial/tutorial.html" data-text="Tutorials"
+              ><span>Tutorials</span></a
+            >
+           
+            <a href="./About-Us/about.html" data-text="About Us"
+              ><span>About Us</span></a
+            >
+            <a href="./Contact-Us/contact-us.html" data-text="Contact Us"
+              ><span>Contact Us</span></a
+            >
+             <a href="./Help.html" data-text="Contact Us"
+              ><span>Help Zone</span></a
+            >
+            <a href="./Login/login.html" id="login-btn" data-text="Login"
+              >Login</a
+            >
+          </nav>
+        </div>
+
+        <!-- mobile -->
+        <div class="mobile-menu">
+          <input type="checkbox" id="check" />
+          <div class="btn_one">
+            <label for="check">
+              <i class="fa-solid fa-bars"></i>
+            </label>
+          </div>
+
+          <div class="sidebar_menu">
+            <div class="logo">
+              <a href="#">STRIKE</a>
+            </div>
+
+            <div class="btn_two">
+              <label for="check">
+                <i class="fa-solid fa-xmark"></i>
+              </label>
+            </div>
+
+            <div class="menu">
+              <ul>
+                <li>
+                  <a href="./index.html">Home</a>
+                </li>
+                <li>
+                  <a href="./Tutorial/tutorial.html">Tutorials</a>
+                </li>
+                
+                <li>
+                  <a href="./About-Us/about.html">About Us</a>
+                </li>
+                <li>
+                  <a href="./Contact-Us/contact-us.html">Contact Us</a>
+                </li>
+                <li>
+                  <a href="./Help.html">Help Zone</a>
+                </li>
+                <li>
+                  <a href="./Login/login.html" id="loginbtn">Login</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>
+
+
+    <div class="container-Doubt">
+      <h1 id="heading-code-Doubt">
+        Say Goodbye to Coding Confusion with <span>Doubt Assistance!</span>
+      </h1>
+
+      <div class="container-code-Doubt">
+        <!-- Left Card -->
+        <div class="card-code-Doubt">
+          <div class="icon-Doubt">⚙</div>
+          <div class="title-Doubt">STRIKE</div>
+          <div class="main-text-Doubt"><span>Doubt </span>Assistance</div>
+          <div class="desc-Doubt">
+            Clear your coding doubts faster with personalized 1:1 support from
+            expert TAs and guidance from your batch community.
+          </div>
+        <a href="./Login/login.html" class="btn-code-Doubt">Enroll Now &rarr;</a>
+        </div>
+
+        <!-- Right Code Box -->
+        <div class="code-box-Doubt">
+          <div class="code-inner-Doubt">
+            <span class="line-Doubt l1">int main() {</span>
+            <span class="line-Doubt l2"> stack&lt;string&gt; doubtStack;</span>
+            <span class="line-Doubt l3">
+              doubtStack.push("How to reverse a string?");</span>
+            <span class="line-Doubt l4">
+              doubtStack.push("Why binary search needs sorted array?");</span>
+            <span class="line-Doubt l5">
+              doubtStack.push("Difference between vector and array?");</span>
+            <span class="line-Doubt l6">
+              doubtStack.push("How to calculate time complexity?");</span>
+            <span class="line-Doubt l7"></span>
+            <span class="line-Doubt l8">
+              cout &lt;&lt; "Total doubts: " &lt;&lt; doubtStack.size() &lt;&lt;
+              endl;</span>
+            <span class="line-Doubt l9"> while(!doubtStack.empty()) {</span>
+            <span class="line-Doubt l10">
+              cout &lt;&lt; "Resolving doubt: " &lt;&lt; doubtStack.top()
+              &lt;&lt; endl;</span>
+            <span class="line-Doubt l11"> doubtStack.pop();</span>
+            <span class="line-Doubt l12"> }</span>
+            <span class="line-Doubt l13"></span>
+            <span class="line-Doubt l14">
+              vector&lt;int&gt; scores = {75,88,92,60,85,78};</span>
+            <span class="line-Doubt l15">
+              sort(scores.begin(), scores.end());</span>
+            <span class="line-Doubt l16">
+              cout &lt;&lt; "Sorted scores: ";</span>
+            <span class="line-Doubt l17">
+              for(auto s : scores) cout &lt;&lt; s &lt;&lt; " ";</span>
+            <span class="line-Doubt l18"> cout &lt;&lt; endl;</span>
+            <span class="line-Doubt l19">
+              vector&lt;int&gt; rev(scores.rbegin(), scores.rend());</span>
+            <span class="line-Doubt l20">
+              cout &lt;&lt; "Highest to lowest: ";</span>
+            <span class="line-Doubt l21">
+              for(auto s : rev) cout &lt;&lt; s &lt;&lt; " ";</span>
+            <span class="line-Doubt l22"> cout &lt;&lt; endl;</span>
+            <span class="line-Doubt l23"> int sum = 0;</span>
+            <span class="line-Doubt l24"> for(auto s : scores) sum += s;</span>
+            <span class="line-Doubt l25">
+              cout &lt;&lt; "Total marks: " &lt;&lt; sum &lt;&lt; endl;</span>
+            <span class="line-Doubt l26">
+              cout &lt;&lt; "Average marks: " &lt;&lt; (double)sum /
+              scores.size() &lt;&lt; endl;</span>
+            <span class="line-Doubt l27">
+              cout &lt;&lt; "All doubts resolved. Keep learning!" &lt;&lt;
+              endl;</span>
+            <span class="line-Doubt l28"> return 0;</span>
+            <span class="line-Doubt l29">}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+  
