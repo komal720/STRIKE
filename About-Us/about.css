@@ -66,14 +66,14 @@ header p {
   color: #a020f0;
   text-align: center;
 }
-p{
+p {
   opacity: 0.7;
 }
 p:hover {
   opacity: 1;
 }
 
-h2{
+h2 {
   opacity: 0.7;
 }
 h2:hover {
@@ -125,8 +125,6 @@ h2:hover {
   box-sizing: border-box;
   margin: 0 15px;
 }
-
-
 
 .instructor-image-wrapper {
   position: relative;
@@ -209,8 +207,6 @@ h2:hover {
   gap: 15px;
   margin-top: 20px;
 }
-
-
 
 .btn.primary:hover {
   background-color: #8a00d0;
@@ -323,7 +319,7 @@ h2:hover {
   animation: fadeUp 0.5s cubic-bezier(0.22, 1, 0.36, 1) forwards;
 }
 
-.skill-item span{
+.skill-item span {
   opacity: 0.7;
 }
 .skill-item span:hover {
@@ -365,7 +361,6 @@ h2:hover {
   box-shadow: 0 0 50px rgba(160, 32, 240, 0.5), 0 0 80px rgba(0, 0, 0, 0.8);
 }
 
-
 /* Animations */
 @keyframes fadeUp {
   0% {
@@ -404,11 +399,9 @@ h2:hover {
   }
 }
 
+/* Footer section */
 
-/* footer */
-
-
-.footer {  
+.footer {
   padding-top: 50px;
   margin-top: 50px;
   animation: fadeUp 1.5s ease;
@@ -545,9 +538,8 @@ h2:hover {
   border-top: 1px solid #1f1f23;
   padding: 15px 0;
   margin-top: 20px;
-  font-size: 20px;
+  font-size: 14px;
   color: white;
-
 }
 
 /* Footer Animations */
@@ -610,7 +602,6 @@ h2:hover {
     font-size: 13px;
   }
 }
-
 
 /* Responsive  */
 @media (max-width: 1024px) {
@@ -730,7 +721,6 @@ h2:hover {
   .skill-item i {
     font-size: 18px;
   }
-  
 }
 
 @media (max-width: 400px) {
@@ -748,7 +738,6 @@ h2:hover {
 }
 
 /* Custom Vertical Scrollbar */
-
 
 ::-webkit-scrollbar {
   width: 12px;
@@ -783,4 +772,3 @@ h2:hover {
     #7f0a94
   ); /* brighter on hover */
 }
-

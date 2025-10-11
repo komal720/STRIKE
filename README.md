@@ -1,13 +1,13 @@
-# ⚡ STRIKE
+#  STRIKE
 
-*Strike* is a responsive and creatively designed website built as part of the *Coder Army CSS Hackathon*.  
-The challenge focused on building an engaging website using only *HTML and CSS* — no JavaScript, frameworks, or libraries allowed.
+Strike is a responsive and creatively designed website built as part of the Coder Army CSS Hackathon.  
+The challenge focused on building an engaging website using only HTML and CSS — no JavaScript, frameworks, or libraries allowed.
 
 ---
 
 ## 🧾 Hackathon Rules
 
-- Use only *HTML & CSS*  
+- Use only HTML & CSS  
 - ❌ No frameworks, libraries, or JavaScript  
 - 🎨 Showcase creativity with layouts, animations, and interactive design  
 - 🧠 Focus on user experience and design aesthetics  
@@ -24,20 +24,19 @@ The challenge focused on building an engaging website using only *HTML and CSS* 
 
 You can view or edit this project locally by following these steps:
 
-1. *Clone the repository*  
-```bash
-git clone https://github.com/your-username/STRIKE.git
+1. Clone the repository
+
+    git clone https://github.com/komal720/STRIKE
 
 2. Navigate to the project folder
 cd STRIKE
 
+3. Open the website
 
-3.Open the website
-
-Double-click the index.html file to open it in your browser
+ -  Double-click the index.html file to open it in your browser
 or
 
-Use VS Code Live Server: Right-click on index.html → Open with Live Server
+- Use VS Code Live Server: Right-click on index.html → Open with Live Server
 
 That’s it 🎉 — the website will launch in your browser.
 
@@ -68,31 +67,26 @@ Strike/
 
 ## 🎨 Features
 
+- STRIKE Website Creative Design
 - Fully responsive layout  
 - Modern and clean UI design  
 - Smooth CSS-based animations  
 - Organized multi-page structure  
-- Focused on accessibility and performance  
+- CSS Animations & Creative Effects
+- Mobile-First Creative Approach
 
 ---
 
-## 🙌 Acknowledgements
-
-Special thanks to  
-*Rohit Negi bhaiya* and *Aditya Tandon bhaiya*  
-for their constant guidance and inspiration throughout the hackathon! 💫
-
----
 
 ## 💻 Tech Stack
 
-- *HTML*  
-- *CSS (Pure CSS, No Frameworks)*  
+- HTML  
+- CSS (Pure CSS, No Frameworks)  
  
 
 ---
 
 ## 🏆 Author
 
-👩‍💻 *Komal Pandey*  
-Built with ❤ for the *Coder Army HTML & CSS Hackathon*.
+👩‍💻 Komal Pandey  
+Built with ❤ for the Coder Army HTML & CSS Hackathon.

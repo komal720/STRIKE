@@ -274,21 +274,25 @@ nav a:hover span {
     0 0 10px rgba(58, 12, 163, 0.5);
 }
 
-#login-btn {
-  background-color: purple;
-  padding: 10px 30px;
+
+#loginbtn {
+  padding: 10px 20px;
   border-radius: 10px;
   font-size: 20px;
   color: white;
   border: none;
-  margin-left: 15px;
+  text-decoration: none;
+  font-weight: 500;
   transition: all 0.4s ease;
+  box-shadow: 0 0 15px rgba(225, 42, 219, 0.477);
+  background: linear-gradient(45deg, #7f0a94, #8427cc, #6f9aff);
 }
 
-#login-btn:hover {
+#loginbtn:hover {
   transform: scale(1.08);
-  background-color: #7209b7;
+  background: linear-gradient(45deg, #6f9aff, #8427cc, #7f0a94);
 }
+
 
 /* Responsive */
 
@@ -728,7 +732,31 @@ p:hover {
 }
 
 .features-section1 span {
-  color: purple;
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  font-weight: 700;
+  background: linear-gradient(90deg, #8b5cf6, #22d3ee, #a855f7, #22d3ee);
+  background-size: 300% 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 20px rgba(139, 92, 246, 0.3);
+  animation: gradient-Shift 5s linear infinite;
+  transition: text-shadow 0.3s ease-in-out;
+}
+
+@keyframes gradient-Shift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.features-section1 span:hover {
+  text-shadow: 0 0 60px rgba(124, 58, 237, 0.5);
 }
 
 .feature-para {

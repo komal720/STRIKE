@@ -3,9 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>STRIKE</title>
-    <link rel="stylesheet" href="after-login.css" />
+    <link rel="stylesheet" href="after-login-and-signup.css" />
     <link rel="icon" href="/images/logo.png" />
+    <title>STRIKE</title>
 
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
@@ -16,9 +16,12 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
   </head>
-
   <body>
-    <div>
+    <div class="top-banner">
+      <div class="marquee">🔥 Get ready — STRIKE hits on October 18! 🔥</div>
+    </div>
+
+    <div class="body-container">
       <!-- header -->
       <div class="intro">
         <img src="/images/logo.png" alt="STRIKE Logo" class="intro-logo" />
@@ -26,35 +29,35 @@
 
       <header>
         <!-- logo -->
-        <div class="header-des">
+        <div class="header-container">
           <div>
             <a href="./index.html"
-              ><img src="./images/logo.png" alt="STRIKE-logo"
+              ><img src="/images/logo.png" alt="STRIKE-logo"
             /></a>
           </div>
           <nav>
             <a href="./index.html" data-text="Home"><span>Home</span></a>
-            <a href="./Tutorial/tutorial.html" data-text="Tutorials"
-              ><span>Tutorials</span></a
+            <a href="/courses/courses.html" data-text="Courses"
+              ><span>Courses</span></a
             >
 
-            <a href="./Testimonials.html" data-text="Contact Us"
-              ><span>Testimonials</span></a
-            >
-            <a href="./About-Us/about.html" data-text="About Us"
+            <a href="/About-Us/about.html" data-text="About Us"
               ><span>About Us</span></a
             >
-            <a href="./Contact-Us/contact-us.html" data-text="Contact Us"
+            <a href="/Contact-Us/contact-us.html" data-text="Contact Us"
               ><span>Contact Us</span></a
             >
-            <a href="./Login/login.html" id="login-btn" data-text="Login"
-              >Login</a
+            <a href="/Help.html" data-text="Contact Us"
+              ><span>Help Zone</span></a
+            >
+            <a href="/index.html" id="loginbtn" target="_blank" rel="noopener noreferrer" data-text="Logout"
+              >Logout</a
             >
           </nav>
         </div>
 
         <!-- mobile -->
-        <div class="main_box">
+        <div class="mobile-menu">
           <input type="checkbox" id="check" />
           <div class="btn_one">
             <label for="check">
@@ -76,22 +79,23 @@
             <div class="menu">
               <ul>
                 <li>
-                  <a href="./index.html">Home</a>
+                  <a href="/index.html">Home</a>
                 </li>
                 <li>
-                  <a href="./Tutorial/tutorial.html">Tutorials</a>
+                  <a href="/courses/courses.html">Courses</a>
+                </li>
+
+                <li>
+                  <a href="/About-Us/about.html">About Us</a>
                 </li>
                 <li>
-                  <a href="./Testimonials.html">Testimonials</a>
+                  <a href="/Contact-Us/contact-us.html">Contact Us</a>
                 </li>
                 <li>
-                  <a href="./About-Us/about.html">About Us</a>
+                  <a href="/Help.html">Help Zone</a>
                 </li>
                 <li>
-                  <a href="./Contact-Us/contact-us.html">Contact Us</a>
-                </li>
-                <li>
-                  <a href="./Login/login.html" id="loginbtn">Login</a>
+                  <a href="/index.html" target="_blank" rel="noopener noreferrer" id="loginbtn">Logout</a>
                 </li>
               </ul>
             </div>
@@ -100,7 +104,6 @@
       </header>
 
       <!-- main -->
-
       <main>
         <section class="hero-section">
           <div class="container">
@@ -108,11 +111,11 @@
               <h1>Strike: Your Path to a High-Impact Tech Career.</h1>
               <p class="slogan">Learn Today. Lead Tomorrow.</p>
               <p>
-                Master Data Structures & Algorithms and Gen AI with our proven,
-                hands-on courses. Go from beginner to job-ready, faster.
+                Master Data Structures & Algorithms and Gen AI with our hands-on
+                courses. Go from beginner to job-ready, faster.
               </p>
               <div class="hero-btn">
-                <a href="./courses/courses.html" class="cta-button sys-btn"
+                <a href="./courses/courses.html" target="_blank" rel="noopener noreferrer"  class="cta-button sys-btn"
                   >Start Your Strike <i class="fa-solid fa-arrow-right sys"></i>
                 </a>
                 <a
@@ -128,7 +131,7 @@
             <div class="img-container">
               <img
                 class="Rohit-sir-img"
-                src="/images/Rohit-sir.png"
+                src="/images/rohit_negi.png"
                 alt="Rohit-sir-img"
               />
             </div>
@@ -136,11 +139,10 @@
         </section>
 
         <section class="features-section1">
-          <h1>Level Up with <span>Strike Premium Courses</span></h1>
+          <h1>Level Up with <span>STRIKE Premium Courses</span></h1>
           <p class="feature-para">
             Strike courses focus on the skills companies actually look for. Get
-            hands-on experience, work on real projects, and stand out in today’s
-            competitive market.
+            hands-on experience and stand out in today’s competitive market.
           </p>
 
           <div class="card-container">
@@ -154,7 +156,7 @@
 
                     <p>
                       Crack coding interviews and learn efficient
-                      problem-solving through structured DSA lessons.
+                      problem-solving through structured lessons.
                     </p>
                     <h3>BEGINNER → ADVANCED</h3>
                     <h3>200+ Practice Problems</h3>
@@ -163,23 +165,19 @@
                 <div class="card-back">
                   <h3>Why This Course?</h3>
                   <p>
-                    Designed for coding interviews and real-world
-                    problem-solving — learn how to think like a developer and
-                    crack top tech roles.
+                    Learn how to think like a developer and crack top tech
+                    roles.
                   </p>
                   <ul>
                     <li>📘 Step-by-step DSA Roadmap</li>
                     <li>💡 500+ Curated Coding Problems</li>
-                    <li>🌳 Deep Dive: Arrays, Trees, Graphs & DP</li>
+                    <li>🌳 Arrays, Trees, Graphs & DP</li>
                     <li>🎯 Mock Interviews & Resume Tips</li>
                     <li>🚀 Placement Support & Career Guidance</li>
                   </ul>
 
                   <button class="btn">
-                    <a
-                      href="https://www.youtube.com/playlist?list=PLQEaRBV9gAFu4ovJ41PywklqI7IyXwr01"
-                      >Start Learning →</a
-                    >
+                    <a href="#">Enroll Now →</a>
                   </button>
                 </div>
               </div>
@@ -189,34 +187,31 @@
             <div class="card">
               <div class="card-inner">
                 <div class="card-front">
-                  <img src="/images/genai.png" alt="HLD Course" />
+                  <img src="/images/genai.png" alt="GenAI Course" />
                   <div class="card-info">
                     <h3>Generative AI Mastery</h3>
                     <p>
-                      Learn how to build and deploy AI applications powered by
-                      ChatGPT, Llama, and Stable Diffusion.
+                      Build AI applications powered by ChatGPT, Llama, and
+                      Stable Diffusion.
                     </p>
                     <h3>BEGINNER → ADVANCED</h3>
                   </div>
                 </div>
                 <div class="card-back">
-                  <h3>What You'll Learn</h3>
+                  <h3>Why This Course?</h3>
                   <p>
-                    Understand the core ideas, architectures, and real-world
-                    power of Generative AI — from language models to creative
-                    applications.
+                    Learn how to think like a developer and crack top tech
+                    roles.
                   </p>
+
                   <ul>
                     <li>🧠 Fundamentals of Generative AI</li>
-                    <li>🏗️ LLM Architecture (GPT, Llama)</li>
+                    <li>🏗 LLM Architecture (GPT, Llama)</li>
                     <li>🎨 AI Art & Image Generation</li>
                     <li>🚀 Real-world GenAI Projects</li>
                   </ul>
                   <button class="btn">
-                    <a
-                      href="https://www.youtube.com/playlist?list=PLd7PleJR_EFfRYiLdagOsv4FczMl1Cxt_"
-                      >Start Learning →</a
-                    >
+                    <a href="#">Enroll Now →</a>
                   </button>
                 </div>
               </div>
@@ -227,11 +222,9 @@
         <section class="features-section2">
           <h1>Ready to Build Your Future?</h1>
           <p class="feature-para">
-            Level up your skills in AI, coding, and more — designed by industry
+            Level up your skills in AI,coding and more-designed by industry
             experts.
           </p>
-
-          <!--  -->
 
           <h1 id="heading-code">
             Master Data Structures & Algorithms in <span>C++</span>
@@ -239,7 +232,7 @@
 
           <div class="container-code">
             <div class="card-code">
-              <div class="icon">⚙️</div>
+              <div class="icon">⚙</div>
               <div class="title">C++ DSA</div>
               <div class="main-text">Efficient Coding with C++</div>
               <div class="desc">
@@ -247,7 +240,7 @@
                 and implement core data structures like stacks, queues, linked
                 lists, and trees in C++.
               </div>
-              <button class="btn">
+              <button class="btn-code">
                 <a
                   href="https://www.youtube.com/playlist?list=PLQEaRBV9gAFu4ovJ41PywklqI7IyXwr01"
                   >Start Learning</a
@@ -314,7 +307,7 @@
           </div>
 
           <!--  -->
-          <a href="./courses/courses.html" class="exp-btn"
+          <a href="./Tutorial/tutorial.html" target="_blank" rel="noopener noreferrer"  class="exp-btn"
             >Explore Courses <i class="fa-solid fa-arrow-right sys"></i>
           </a>
         </section>
@@ -337,10 +330,170 @@
             <p>Followers on LinkedIn</p>
           </div>
         </section>
+
+        <div class="hero-btn test">
+          <a href="./Testimonials.html" target="_blank" rel="noopener noreferrer" class="cta-button sys-btn"
+            >Read Testimonials<i class="fa-solid fa-arrow-right sys"></i>
+          </a>
+        </div>
+
+        <section class="certificate-section">
+          <div class="cert-left">
+            <h2>Unlock Your <span>Potential.</span></h2>
+
+            <div class="cert-points">
+              <div class="cert-point">
+                <div>
+                  <i class="fa-solid fa-award"></i>
+                </div>
+                <div>
+                  <h3>Fast-Track Your Career</h3>
+                  <p>
+                    Learn, practice, and become internship-ready in just a few
+                    months!
+                  </p>
+                </div>
+              </div>
+
+              <div class="cert-point">
+                <div><i class="fa-solid fa-medal"></i></div>
+                <div>
+                  <h3>Code. Learn. Conquer.</h3>
+                  <p>
+                    The path is simple: follow guidance, put in effort, and get
+                    ready for your first big tech role.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <button class="cert-enroll-btn">
+              <a href="./Login/login.html" target="_blank" rel="noopener noreferrer">
+                Enroll Now <i class="fa-solid fa-arrow-right sys"></i
+              ></a>
+            </button>
+          </div>
+
+          <div class="cert-right" style="position: relative">
+            <p class="sub-head">
+              Earn Your Certification, <span>Land Your Dream Role</span>
+            </p>
+            <img src="/images/Get_Certificate.png" alt="Certificate Preview" />
+            <i
+              class="fa-solid fa-award floating-icon"
+              style="
+                position: absolute;
+                top: -20px;
+                left: 10%;
+                font-size: 1.5rem;
+                color: #ffd700;
+              "
+            ></i>
+            <i
+              class="fa-solid fa-medal floating-icon"
+              style="
+                position: absolute;
+                top: 10%;
+                right: 5%;
+                font-size: 1.5rem;
+                color: #ff8c00;
+              "
+            ></i>
+            <i
+              class="fa-solid fa-award floating-icon"
+              style="
+                position: absolute;
+                bottom: 10px;
+                left: 20%;
+                font-size: 1.2rem;
+                color: #ffd700;
+              "
+            ></i>
+            <i
+              class="fa-solid fa-medal floating-icon"
+              style="
+                position: absolute;
+                bottom: 15%;
+                right: 15%;
+                font-size: 1.2rem;
+                color: #ff8c00;
+              "
+            ></i>
+          </div>
+        </section>
+
+        <section class="STRIKE-advantage">
+          <div class="strike-content">
+            <div class="text-strike">
+              <div class="heading-strike">
+                <div class="brand-strike">
+                  <h1 class="brand-name-strike">
+                    Welcome to <span class="strike-name">STRIKE</span>
+                  </h1>
+                  <p class="strike-tagline">Stay Ahead, Stay STRIKE</p>
+                </div>
+                <p class="strike-description">
+                  Discover why learners accelerate faster and achieve more with
+                  our structured, problem-based learning platform.
+                </p>
+                <div class="strike-founder">
+                  <span class="founder-label">Founder:</span>
+                  <span class="founder-name">Rohit Negi</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="chart-strike">
+              <div class="chart-header">
+                <span class="chart-title"
+                  >📊 How STRIKE Transforms Learning</span
+                >
+              </div>
+
+              <div class="bar-chart">
+                <div class="bar-item" data-delay="0s">
+                  <span class="founder-label">🧩 Solving Skills</span>
+                  <div class="bar">
+                    <div class="fill STRIKE-fill" style="width: 92%"></div>
+                    <div class="fill other-fill" style="width: 65%"></div>
+                  </div>
+                </div>
+
+                <div class="bar-item" data-delay="0.2s">
+                  <span class="founder-label">❓ Clear Doubt Support</span>
+                  <div class="bar">
+                    <div class="fill STRIKE-fill" style="width: 95%"></div>
+                    <div class="fill other-fill" style="width: 60%"></div>
+                  </div>
+                </div>
+
+                <div class="bar-item" data-delay="0.4s">
+                  <span class="founder-label">🎤 Interview Skills</span>
+                  <div class="bar">
+                    <div class="fill STRIKE-fill" style="width: 90%"></div>
+                    <div class="fill other-fill" style="width: 70%"></div>
+                  </div>
+                </div>
+
+                <div class="bar-item" data-delay="0.6s">
+                  <span class="founder-label">🚀 Workplace Readiness</span>
+                  <div class="bar">
+                    <div class="fill STRIKE-fill" style="width: 88%"></div>
+                    <div class="fill other-fill" style="width: 68%"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="legend">
+                <div><span class="dot STRIKE-dot"></span> STRIKE</div>
+                <div><span class="dot other-dot"></span> Other</div>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
 
       <!-- footer -->
-
       <footer class="footer">
         <div class="footer-top-border"></div>
         <div class="footer-container">
@@ -369,7 +522,7 @@
             <ul>
               <li><a href="../index.html">Home</a></li>
               <li><a href="/About-Us/about.html">About Us</a></li>
-              <li><a href="/Tutorial/tutorial.html">Tutorials</a></li>
+              <li><a href="/courses/courses.html">Courses</a></li>
               <li><a href="/Contact-Us/contact-us.html">Contact Us</a></li>
             </ul>
           </div>
@@ -378,7 +531,7 @@
             <h3>Company</h3>
             <ul>
               <li>
-                <a href="/Terms&Condition/terms.html">Terms & Conditions</a>
+                <a href="/Terms&Condition/terms.html" target="_blank" rel="noopener noreferrer">Terms & Conditions</a>
               </li>
               <li><a href="#">Privacy Policy</a></li>
             </ul>
@@ -387,11 +540,8 @@
           <div class="footer-col">
             <h3>Contact Info</h3>
             <p><i class="fa-solid fa-envelope"></i>strike@gmail.com</p>
-            <p><i class="fa-solid fa-phone"></i>+9195216*****</p>
-            <p>
-              <i class="fa-solid fa-location-dot"></i>STRIKE Pvt. Ltd.
-              Delhi-110001
-            </p>
+            <p><i class="fa-solid fa-phone"></i>+91 9521687654</p>
+            <p><i class="fa-solid fa-location-dot"></i>Delhi-110001</p>
           </div>
         </div>
 

@@ -221,8 +221,8 @@ body::before {
     transform: translate(-50%, -50%) scale(1.7) rotateY(180deg);
   }
   100% {
-    top: 32px;
-    left: 120px;
+    top: 44px;
+    left: 140px;
     transform: translate(0, 0) scale(1) rotateY(360deg);
   }
 }
@@ -269,20 +269,22 @@ nav a:hover span {
     0 0 10px rgba(58, 12, 163, 0.5);
 }
 
-#login-btn {
-  background-color: purple;
-  padding: 10px 30px;
+#loginbtn {
+  padding: 10px 20px;
   border-radius: 10px;
   font-size: 20px;
   color: white;
   border: none;
-  margin-left: 15px;
+  text-decoration: none;
+  font-weight: 500;
   transition: all 0.4s ease;
+  box-shadow: 0 0 15px rgba(225, 42, 219, 0.477);
+  background: linear-gradient(45deg, #7f0a94, #8427cc, #6f9aff);
 }
 
-#login-btn:hover {
+#loginbtn:hover {
   transform: scale(1.08);
-  background-color: #7209b7;
+  background: linear-gradient(45deg, #6f9aff, #8427cc, #7f0a94);
 }
 
 /* Responsive */
@@ -445,7 +447,7 @@ nav a:hover span {
 
   img {
     width: 12rem;
-    padding: 20px 0px 0px 10px;
+    padding: 12px 0px 0px 10px;
   }
 }
 
@@ -480,8 +482,8 @@ nav a:hover span {
       transform: translate(-50%, -50%) scale(1.7) rotateY(180deg);
     }
     100% {
-      top: 32px;
-      left: 0px;
+      top: 40px;
+      left: 10px;
       transform: translate(0, 0) scale(1) rotateY(360deg);
     }
   }

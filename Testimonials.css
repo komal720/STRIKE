@@ -10,14 +10,13 @@ body {
   flex-direction: column;
   align-items: center;
   padding: 3rem 1rem;
-   max-width: 1280px;
-   margin:0 auto;
+  max-width: 1280px;
+  margin: 0 auto;
   min-height: 100vh;
-  overflow-x: hidden; 
+  overflow-x: hidden;
   color: #f1f5f9;
   position: relative;
 }
-
 
 body::before {
   content: "";
@@ -43,7 +42,6 @@ body::before {
     background-position: 0% 50%;
   }
 }
-
 
 .reviews {
   max-width: 1100px;
@@ -104,7 +102,6 @@ body::before {
   opacity: 0.8;
 }
 
-
 .cards-container {
   overflow: hidden;
   position: relative;
@@ -125,7 +122,6 @@ body::before {
     transform: translateX(-50%);
   }
 }
-
 
 .card {
   flex: 0 0 clamp(250px, 28%, 380px);
@@ -174,7 +170,6 @@ body::before {
   margin-bottom: 1.6rem;
 }
 
-
 .info {
   display: flex;
   align-items: center;
@@ -192,14 +187,12 @@ body::before {
   place-items: center;
   color: #22d3ee;
   font-weight: 600;
-  height:3.5rem;
-  width:4rem;
+  height: 3.5rem;
+  width: 4rem;
   font-size: clamp(16px, 2vw, 22px);
   transition: transform 0.4s ease;
   padding: 10px;
 }
-
-
 
 .name {
   font-size: clamp(14px, 1.5vw, 16px);
@@ -224,14 +217,13 @@ body::before {
   color: #9ca3af;
 }
 
-
 .faq-container {
   padding-top: 6rem;
-   max-width: 800px;
+  max-width: 800px;
 }
 
 .faq-header {
-   font-size: clamp(1.8rem, 4vw, 2.5rem);
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
   text-align: center;
 
   font-weight: 700;
@@ -269,11 +261,11 @@ body::before {
 }
 
 .faq-card .faq-toggle {
-  display: none; 
+  display: none;
 }
 
 .faq-card .question {
- font-size: clamp(0.2rem, 4vw, 1.5rem);
+  font-size: clamp(0.2rem, 4vw, 1.5rem);
   font-weight: 600;
   color: #f1f5f9;
   display: block;
@@ -317,19 +309,15 @@ body::before {
   display: inline-block;
 }
 
-
 .icon {
   transition: transform 0.3s ease;
   margin-left: 10px;
-  color:#ffffff;
+  color: #ffffff;
 }
 
 .faq-toggle:checked + .question .icon {
   transform: rotate(90deg);
 }
-
-
-
 
 /* Footer section */
 
@@ -534,8 +522,6 @@ body::before {
     font-size: 13px;
   }
 }
-
-
 /* Custom Vertical Scrollbar */
 
 ::-webkit-scrollbar {
@@ -571,4 +557,3 @@ body::before {
     #7f0a94
   ); /* brighter on hover */
 }
-

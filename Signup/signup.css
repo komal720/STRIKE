@@ -25,21 +25,22 @@ body::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(
-    120deg,
-    #220337,
-    #0a0c10,
-    #230860
-  );
+  background: linear-gradient(120deg, #220337, #0a0c10, #230860);
   background-size: 400% 400%;
   animation: gradientMove 6s ease infinite;
   z-index: -1;
 }
 
 @keyframes gradientMove {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 /* Starry Background */
@@ -52,20 +53,43 @@ body::after {
   height: 100%;
   pointer-events: none;
   z-index: -1;
-  background-image: radial-gradient(3px 3px at 5% 10%, rgba(255,255,255,0.25) 0%, transparent 100%),
-                    radial-gradient(2px 2px at 15% 20%, rgba(255,255,255,0.2) 0%, transparent 100%),
-                    radial-gradient(4px 4px at 35% 15%, rgba(255,255,255,0.28) 0%, transparent 100%),
-                    radial-gradient(3px 3px at 45% 25%, rgba(255,255,255,0.22) 0%, transparent 100%),
-                    radial-gradient(3px 3px at 65% 45%, rgba(255,255,255,0.26) 0%, transparent 100%);
+  background-image: radial-gradient(
+      3px 3px at 5% 10%,
+      rgba(255, 255, 255, 0.25) 0%,
+      transparent 100%
+    ),
+    radial-gradient(
+      2px 2px at 15% 20%,
+      rgba(255, 255, 255, 0.2) 0%,
+      transparent 100%
+    ),
+    radial-gradient(
+      4px 4px at 35% 15%,
+      rgba(255, 255, 255, 0.28) 0%,
+      transparent 100%
+    ),
+    radial-gradient(
+      3px 3px at 45% 25%,
+      rgba(255, 255, 255, 0.22) 0%,
+      transparent 100%
+    ),
+    radial-gradient(
+      3px 3px at 65% 45%,
+      rgba(255, 255, 255, 0.26) 0%,
+      transparent 100%
+    );
   background-size: cover;
   animation: floatParticles 45s linear infinite;
 }
 
 @keyframes floatParticles {
-  0% { background-position: 0 0; }
-  100% { background-position: 150vw 150vh; }
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 150vw 150vh;
+  }
 }
-
 
 .logo img {
   width: 12rem;
@@ -89,15 +113,23 @@ body::after {
   transform: translateY(-5px);
 }
 
-
 .signup-container:focus-within {
   animation-play-state: paused;
 }
 
 @keyframes fadeSlideUpCycle {
-  0% { opacity: 0; transform: translateY(40px); }
-  11.4% { opacity: 1; transform: translateY(0); }
-  100% { opacity: 1; transform: translateY(0); }
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  11.4% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .form-title {
@@ -106,7 +138,6 @@ body::after {
   font-size: 1.8em;
   font-weight: 600;
 }
-
 
 .input-group {
   position: relative;
@@ -118,7 +149,7 @@ body::after {
   left: 15px;
   top: 50%;
   transform: translateY(-50%);
-  color: rgba(255,255,255,0.5);
+  color: rgba(255, 255, 255, 0.5);
   transition: color 0.3s ease;
 }
 
@@ -131,20 +162,20 @@ body::after {
   color: #f0f0f0;
   font-size: 1em;
   box-sizing: border-box;
-  box-shadow: inset 0 2px 5px rgba(0,0,0,0.3);
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(6px);
   transition: all 0.3s ease;
 }
 
 .input-group input::placeholder {
-  color: rgba(255,255,255,0.6);
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .input-group input:focus {
   outline: none;
-  border: 1px solid rgba(122,66,177,0.8);
-  box-shadow: 0 0 8px rgba(122,66,177,0.5);
-  background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(122, 66, 177, 0.8);
+  box-shadow: 0 0 8px rgba(122, 66, 177, 0.5);
+  background: rgba(255, 255, 255, 0.1);
 }
 
 .input-group input:focus + .icon {
@@ -152,8 +183,7 @@ body::after {
 }
 
 .signup-button {
-  width: 100%;
-  padding: 18px;
+  padding: 16px 120px;
   border: none;
   border-radius: 10px;
   background: linear-gradient(135deg, #542483, #9b59b6);
@@ -162,36 +192,15 @@ body::after {
   font-weight: bold;
   cursor: pointer;
   letter-spacing: 1px;
-  box-shadow: 0 4px 10px rgba(122,66,177,0.5);
+  box-shadow: 0 4px 10px rgba(122, 66, 177, 0.5);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   position: relative;
   overflow: hidden;
-}
-
-.signup-button::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -75px;
-  width: 50px;
-  height: 100%;
-  background: rgba(255,255,255,0.4);
-  transform: skewX(-25deg);
-}
-
-.signup-button:hover::before {
-  animation: shine 0.8s;
-}
-
-@keyframes shine {
-  0% { left: -75px; }
-  100% { left: 110%; }
-}
-
-.signup-button a {
   text-decoration: none;
   color: #fff;
+  width: 100%;
 }
+
 
 /* Login link text */
 .login-link {
@@ -212,27 +221,65 @@ body::after {
 
 /* Responsive */
 @media (max-width: 768px) {
-  body { padding: 2em; }
-  .signup-container { width: 100%; max-width: 440px; padding: 2em; }
-  .form-title { font-size: 1.6em; }
-  .signup-button { padding: 15px; font-size: 1em; }
+  body {
+    padding: 2em;
+  }
+  .signup-container {
+    width: 100%;
+    max-width: 440px;
+    padding: 2em;
+  }
+  .form-title {
+    font-size: 1.6em;
+  }
+  .signup-button {
+    padding: 15px 125px;
+    font-size: 1em;
+  }
 }
 
 @media (max-width: 480px) {
-  body { align-items: flex-start; padding-top: 4em; }
-  .signup-container { width: 100%; padding: 1.8em; border-radius: 12px; }
-  .form-title { font-size: 1.4em; margin-bottom: 1.5em; }
-  .input-group input { padding: 12px 12px 12px 45px; font-size: 0.95em; }
-  .signup-button { font-size: 1em; padding: 14px; }
-  .login-link { font-size: 0.85em; }
+  body {
+    align-items: flex-start;
+    padding-top: 4em;
+  }
+  .signup-container {
+    width: 100%;
+    padding: 1.8em;
+    border-radius: 12px;
+  }
+  .form-title {
+    font-size: 1.4em;
+    margin-bottom: 1.5em;
+  }
+  .input-group input {
+    padding: 12px 12px 12px 45px;
+    font-size: 0.95em;
+  }
+  .signup-button {
+    font-size: 1em;
+    padding: 14px 120px;
+  }
+  .login-link {
+    font-size: 0.85em;
+  }
 }
 
-@media (max-width: 360px) {
-  .form-title { font-size: 1.2em; }
-  .signup-container { padding: 1.5em; }
-  .input-group input { font-size: 0.9em; }
+@media (max-width: 460px) {
+  .form-title {
+    font-size: 1.2em;
+  }
+  .signup-container {
+    padding: 1.5em;
+  }
+  .input-group input {
+    font-size: 0.9em;
+  }
+  .signup-button {
+    font-size: 1em;
+    padding: 14px 80px;
+  }
 }
-
 
 .signup-form .form-title {
   opacity: 0;
@@ -244,15 +291,35 @@ body::after {
   animation: fadeIn 0.8s ease-out forwards;
 }
 
-.signup-form .input-group:nth-of-type(1) { animation-delay: 0.4s; }
-.signup-form .input-group:nth-of-type(2) { animation-delay: 0.6s; }
-.signup-form .input-group:nth-of-type(3) { animation-delay: 0.8s; }
-.signup-form .input-group:nth-of-type(4) { animation-delay: 1s; }
+.signup-form .input-group:nth-of-type(1) {
+  animation-delay: 0.4s;
+}
+.signup-form .input-group:nth-of-type(2) {
+  animation-delay: 0.6s;
+}
+.signup-form .input-group:nth-of-type(3) {
+  animation-delay: 0.8s;
+}
+.signup-form .input-group:nth-of-type(4) {
+  animation-delay: 1s;
+}
 
-.signup-form .signup-button { opacity: 0; animation: fadeIn 0.8s ease-out 1.2s forwards; }
-.signup-form .login-link { opacity: 0; animation: fadeIn 0.8s ease-out 1.4s forwards; }
+.signup-form .signup-button {
+  opacity: 0;
+  animation: fadeIn 0.8s ease-out 1.2s forwards;
+}
+.signup-form .login-link {
+  opacity: 0;
+  animation: fadeIn 0.8s ease-out 1.4s forwards;
+}
 
 @keyframes fadeIn {
-  0% { opacity: 0; transform: translateY(15px); }
-  100% { opacity: 1; transform: translateY(0); }
+  0% {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
