@@ -42,7 +42,9 @@ That’s it 🎉 — the website will launch in your browser.
 
 
 ## 📂 Project Structure
-Strike/
+```plaintext
+
+Strike
 │
 ├── About-Us/
 ├── After-login&signup/
@@ -61,7 +63,7 @@ Strike/
 ├── index.html
 └── style.css
 
-
+```
 
 ---
 
