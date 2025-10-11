@@ -4,13 +4,17 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+
 body {
-  max-width: 1280px;
+  width: 100%;
+}
+
+.body-container {
   margin: 0 auto;
   color: #fff;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  max-width: 1280px;
 }
+
 body::before {
   content: "";
   position: fixed;
@@ -18,16 +22,12 @@ body::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(
-    120deg,
-    #220337,
-    #0a0c10,
-    #230860
-  ); 
+  background: linear-gradient(120deg, #220337, #0a0c10, #230860);
   background-size: 400% 400%;
   animation: gradientMove 6s ease infinite;
   z-index: -1;
 }
+
 @keyframes gradientMove {
   0% {
     background-position: 0% 50%;
@@ -40,7 +40,109 @@ body::before {
   }
 }
 
-.header-des {
+/* banner */
+
+.top-banner {
+  background: linear-gradient(120deg, #4d1570, #0a0c10, #3607a3);
+  color: #00eaff;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 1rem;
+  font-weight: 600;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  box-sizing: border-box;
+  z-index: 1000;
+  width: 100%;
+  letter-spacing: 1px;
+  border-top: 2px solid #7a00ff;
+  border-bottom: 2px solid #7a00ff;
+  box-shadow: 0 0 25px rgba(0, 234, 255, 0.3);
+  backdrop-filter: blur(4px);
+}
+
+/* Shimmer Effect */
+.top-banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -50%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255, 255, 255, 0.3),
+    transparent
+  );
+  animation: shine 3s linear infinite;
+}
+
+@keyframes shine {
+  0% {
+    left: -50%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+/* Moving Text  */
+.marquee {
+  display: inline-block;
+  white-space: nowrap;
+  animation: move 10s linear infinite;
+}
+
+@keyframes move {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@media (max-width: 1024px) {
+  .top-banner {
+    font-size: 1rem;
+    padding: 12px 0;
+    margin: 0px;
+  }
+}
+
+@media (max-width: 768px) {
+  .top-banner {
+    font-size: 0.9rem;
+    padding: 10px 0;
+  }
+
+  .marquee {
+    animation-duration: 10s;
+  }
+}
+
+@media (max-width: 480px) {
+  .top-banner {
+    font-size: 0.8rem;
+    padding: 8px 0;
+  }
+
+  .marquee {
+    animation-duration: 8s;
+  }
+}
+
+@media (max-width: 360px) {
+  .top-banner {
+    font-size: 0.7rem;
+    padding: 6px 0;
+  }
+}
+
+.header-container {
+  margin-top: 2rem;
   width: 100%;
   max-width: 1280px;
   display: flex;
@@ -50,14 +152,10 @@ body::before {
   top: 0px;
   z-index: 100;
   box-shadow: 0 10px 25px rgba(29, 24, 90, 0.6);
-  background: linear-gradient(
-    120deg,
-    #220337,
-    #0a0c10,
-    #230860
-  ); /* Purple → Black → Blue */
+  background: linear-gradient(120deg, #220337, #0a0c10, #230860);
   background-size: 400% 400%;
   animation: gradientMove 6s ease infinite;
+  padding: 12px 12px 0px 12px;
 }
 
 .intro {
@@ -71,11 +169,12 @@ body::before {
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 9999;
+  z-index: 101;
   overflow: hidden;
   animation: introFadeOut 0.5s forwards;
-  animation-delay: 2.8s;
+  animation-delay: 2.4s;
 }
+
 @keyframes logoLinear {
   0% {
     top: 50%;
@@ -88,6 +187,7 @@ body::before {
     transform: translate(0, -50%) scale(1);
   }
 }
+
 @keyframes bgFade {
   0% {
     opacity: 0.8;
@@ -98,6 +198,7 @@ body::before {
     filter: blur(0px);
   }
 }
+
 @keyframes introFadeOut {
   0% {
     opacity: 1;
@@ -107,14 +208,16 @@ body::before {
     visibility: hidden;
   }
 }
+
 .intro-logo {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1.5) rotateY(0deg);
-  animation: logo3D 2.5s ease-in-out forwards;
+  animation: logo3D 1.7s ease-in-out forwards;
   perspective: 1000px;
 }
+
 @keyframes logo3D {
   0% {
     transform: translate(-50%, -50%) scale(1.5) rotateY(0deg);
@@ -123,11 +226,12 @@ body::before {
     transform: translate(-50%, -50%) scale(1.7) rotateY(180deg);
   }
   100% {
-    top: 0px;
-    left: 120px;
+    top: 44px;
+    left: 135px;
     transform: translate(0, 0) scale(1) rotateY(360deg);
   }
 }
+
 header {
   display: flex;
   align-items: center;
@@ -148,6 +252,7 @@ nav {
   justify-content: space-between;
   align-items: center;
 }
+
 nav a {
   margin-left: 20px;
   color: #fff;
@@ -179,20 +284,23 @@ nav a:hover span {
   margin-left: 15px;
   transition: all 0.4s ease;
 }
+
 #login-btn:hover {
   transform: scale(1.08);
   background-color: #7209b7;
 }
 
 /* Responsive */
-@media (max-width: 860px) {
-  .main_box {
+
+@media (max-width: 890px) {
+  .mobile-menu {
     position: absolute;
     top: 0;
     right: 15px;
-    z-index: 101;
+    z-index: 1000;
     background: transparent;
   }
+
   #loginbtn {
     background-color: purple;
     width: 50%;
@@ -204,6 +312,7 @@ nav a:hover span {
     color: white;
     border: none;
   }
+
   .btn_one i {
     color: #fff;
     font-size: 32px;
@@ -211,17 +320,19 @@ nav a:hover span {
     position: fixed;
     top: 0px;
     top: 15px;
+    margin-top: 2rem;
     right: 25px;
     line-height: 60px;
     cursor: pointer;
     transition: transform 0.3s ease, color 0.3s ease;
   }
+
   .btn_one i:hover {
     transform: scale(1.2);
     color: #a855f7;
   }
 
-  /* SIDEBAR MENU */
+  /* === SIDEBAR MENU === */
   .sidebar_menu {
     position: fixed;
     right: -300px;
@@ -237,6 +348,7 @@ nav a:hover span {
     border-left: 2px solid rgba(168, 85, 247, 0.4);
     z-index: 999;
   }
+
   @keyframes sidebarGradient {
     0% {
       background-position: 0% 50%;
@@ -248,6 +360,7 @@ nav a:hover span {
       background-position: 0% 50%;
     }
   }
+
   .sidebar_menu .logo {
     position: absolute;
     width: 100%;
@@ -261,9 +374,11 @@ nav a:hover span {
     letter-spacing: 1px;
     background: rgba(10, 12, 16, 0.6);
   }
+
   .logo a {
     text-decoration: none;
   }
+
   .sidebar_menu .btn_two i {
     color: #fff;
     font-size: 26px;
@@ -275,22 +390,26 @@ nav a:hover span {
     cursor: pointer;
     transition: all 0.3s ease;
   }
+
   .sidebar_menu .menu {
     position: absolute;
     width: 100%;
     top: 90px;
   }
+
   .sidebar_menu .menu li {
     margin: 12px 0;
     padding: 14px 25px;
     list-style: none;
     transition: background 0.3s ease, transform 0.2s ease;
   }
+
   .sidebar_menu .menu li:hover {
     background: rgba(255, 255, 255, 0.08);
     transform: translateX(5px);
     border-left: 3px solid #a855f7;
   }
+
   .sidebar_menu .menu a {
     color: #fff;
     text-decoration: none;
@@ -301,39 +420,109 @@ nav a:hover span {
     align-items: center;
     gap: 10px;
   }
+
   .sidebar_menu .menu i {
     color: #a855f7;
     font-size: 20px;
   }
+
+  /* Checkbox toggle animation */
   #check {
     display: none;
   }
+
   #check:checked ~ .sidebar_menu {
     right: 0;
     box-shadow: -5px 0 25px rgba(168, 85, 247, 0.4);
   }
+
   #check:checked ~ .btn_one i {
     opacity: 0;
   }
+
   #check:checked ~ .sidebar_menu .btn_two i {
     opacity: 1;
   }
+
   nav {
     display: none;
   }
+
   img {
     width: 12rem;
-    padding-top: 20px;
+    padding: 20px 0px 0px 10px;
   }
 }
-@media (min-width: 861px) {
-  .main_box {
+
+@media (min-width: 891px) {
+  .mobile-menu {
     display: none;
   }
   img {
-    width: 12rem;
+    width: 13rem;
   }
-} 
+}
+
+@media (max-width: 700px) {
+  img {
+    width: 9rem;
+    transition: transform 0.6s;
+  }
+  .intro-logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1.5) rotateY(0deg);
+    animation: logo3D 1.7s ease-in-out forwards;
+    perspective: 1000px;
+  }
+
+  @keyframes logo3D {
+    0% {
+      transform: translate(-50%, -50%) scale(1.5) rotateY(0deg);
+    }
+    50% {
+      transform: translate(-50%, -50%) scale(1.7) rotateY(180deg);
+    }
+    100% {
+      top: 32px;
+      left: 0px;
+      transform: translate(0, 0) scale(1) rotateY(360deg);
+    }
+  }
+}
+
+@media (min-width: 701px) and (max-width: 1300px) {
+  img {
+    width: 10rem;
+    transition: transform 0.6s;
+  }
+  .intro-logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1.5) rotateY(0deg);
+    animation: logo3D 1.7s ease-in-out forwards;
+    perspective: 1000px;
+  }
+
+  @keyframes logo3D {
+    0% {
+      transform: translate(-50%, -50%) scale(1.5) rotateY(0deg);
+    }
+    50% {
+      transform: translate(-50%, -50%) scale(1.7) rotateY(180deg);
+    }
+    100% {
+      top: 32px;
+      left: 0px;
+      transform: translate(0, 0) scale(1) rotateY(360deg);
+    }
+  }
+}
+
+/* get in touch */
+
 .Get-in-touch {
   display: flex;
   justify-content: center;
